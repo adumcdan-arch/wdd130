@@ -1,0 +1,156 @@
+/* =========================
+   1. CSS Variables
+   ========================= */
+:root {
+    --primary-color: #0077b6;    /* main blue for headings and accents */
+    --accent1-color: #023e8a;    /* body text color */
+    --background-color: #f8f9fa; /* light gray for article/sections */
+    --section-color: #f1f1f1;    /* slightly darker gray for sections */
+    --body-font: 'Arial', sans-serif;
+    --heading-font: 'Verdana', sans-serif;
+}
+
+/* =========================
+   2. Reset box-model
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   3. Body Styles
+   ========================= */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
+}
+
+/* =========================
+   4. Page Width & Centering
+   ========================= */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* =========================
+   5. Headings
+   ========================= */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* =========================
+   6. Basic Margins & Padding
+   ========================= */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* =========================
+   7. Header
+   ========================= */
+header {
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #90e0ef;
+}
+
+/* =========================
+   8. Hero Section
+   ========================= */
+.hero {
+    height: 400px;
+    background: url('../images/rafting_hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* =========================
+   9. Article Section
+   ========================= */
+article {
+    display: flex;
+    gap: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.article-img {
+    width: 250px;
+    height: auto;
+    border: 4px solid #ffffff;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* =========================
+   10. Sections
+   ========================= */
+section {
+    background-color: var(--section-color);
+    border-radius: 8px;
+}
+
+/* =========================
+   11. Footer
+   ========================= */
+footer {
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socialmedia a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.2);
+}
