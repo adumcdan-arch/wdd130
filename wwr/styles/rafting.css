@@ -1,165 +1,48 @@
-/* =========================
-   1. CSS Variables
-   ========================= */
-:root {
-    --primary-color: #0077b6; 	    /* main blue for headings and accents */
-    --accent1-color: #023e8a; 	    /* body text color */
-    --background-color: #f8f9fa; /* light gray for article/sections - unused for article */
-    --section-color: #f1f1f1; 	    /* slightly darker gray for sections */
-    --body-font: 'Arial', sans-serif;
-    --heading-font: 'Verdana', sans-serif;
-}
-
-/* =========================
-   2. Reset box-model
-   ========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* =========================
-   3. Body Styles
-   ========================= */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* =========================
-   4. Page Width & Centering
-   ========================= */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+header, footer {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* =========================
-   5. Headings (MODIFIED)
-   ========================= */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+/* HERO SECTION */
+.hero {
+  position: relative;
 }
 
-/* Style for the main H1 in the content area to match a standard title */
-main h1 {
-    font-size: 2.5rem; 
-    color: var(--accent1-color);
-    padding: 16px;
-    margin: 16px 0 32px 16px; /* Adds space above the article */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* =========================
-   6. Basic Margins & Padding (MODIFIED)
-   ========================= */
-/* Default for elements that need spacing */
-nav, section {
-    margin: 16px;
-    padding: 8px;
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 
-/* Paragraph spacing reset for use in the Article flex container */
-p {
-    margin: 0;
-    padding: 8px;
-}
-
-
-/* =========================
-   7. Header
-   ========================= */
-header {
-    background-color: var(--primary-color);
-    padding: 15px 20px;
-    color: #ffffff;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo {
-    height: 60px;
-}
-
-header nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #90e0ef;
-}
-
-/* =========================
-   8. Hero Section
-   ========================= */
-/* This section is REMOVED to align with the sample layout. */
-
-
-/* =========================
-   9. Article Section (MODIFIED for sample look)
-   ========================= */
-article {
-    display: flex;
-    gap: 20px;
-    /* Removed background and border radius */
-    background-color: transparent; 
-    border-radius: 0;
-    /* Match the content width margins, but remove vertical padding */
-    margin: 16px; 
-    padding: 0; 
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .article-img {
-    width: 250px;
-    height: auto;
-    /* Removed border to match sample */
-    border: none; 
-    border-radius: 8px;
-    flex-shrink: 0;
-}
-
-/* =========================
-   10. Sections (History, Adventure) (MODIFIED)
-   ========================= */
-section {
-    background-color: var(--section-color);
-    border-radius: 8px;
-    margin: 32px 16px; /* Added vertical margin for spacing */
-    padding: 16px;
-}
-
-/* =========================
-   11. Footer
-   ========================= */
-footer {
-    background-color: var(--accent1-color);
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .socialmedia a {
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .socialmedia img {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    transition: transform 0.3s;
-}
-
-footer .socialmedia img:hover {
-    transform: scale(1.2);
+  width: 100%;
+  border-radius: 5px;
 }
