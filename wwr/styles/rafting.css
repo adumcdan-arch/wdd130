@@ -1,11 +1,17 @@
+That's a great approach! I'll provide the corrected CSS based on the adjustments we discussed to make your "About Us" page match the layout of your instructor's sample.
+
+Here is the revised CSS code for your styles/rafting.css:
+
+CSS
+
 /* =========================
    1. CSS Variables
    ========================= */
 :root {
-    --primary-color: #0077b6;    /* main blue for headings and accents */
-    --accent1-color: #023e8a;    /* body text color */
-    --background-color: #f8f9fa; /* light gray for article/sections */
-    --section-color: #f1f1f1;    /* slightly darker gray for sections */
+    --primary-color: #0077b6; 	    /* main blue for headings and accents */
+    --accent1-color: #023e8a; 	    /* body text color */
+    --background-color: #f8f9fa; /* light gray for article/sections - REMOVED FOR ARTICLE */
+    --section-color: #f1f1f1; 	    /* slightly darker gray for sections */
     --body-font: 'Arial', sans-serif;
     --heading-font: 'Verdana', sans-serif;
 }
@@ -44,13 +50,30 @@ h1, h2 {
     color: var(--primary-color);
 }
 
+/* New style for the main H1 in the content area */
+main h1 {
+    font-size: 2.5rem; 
+    color: var(--accent1-color);
+    padding: 16px;
+    margin: 16px 0 32px 16px; 
+}
+
+
 /* =========================
    6. Basic Margins & Padding
    ========================= */
 nav, p, section, article {
+    /* Adjusted article padding/margin is handled below */
     margin: 16px;
     padding: 8px;
 }
+
+/* Tighter spacing for paragraph text inside the article to align with the sample */
+article p {
+    margin: 0; 
+    padding: 8px;
+}
+
 
 /* =========================
    7. Header
@@ -86,40 +109,32 @@ header nav a:hover {
 /* =========================
    8. Hero Section
    ========================= */
-.hero {
-    height: 400px;
-    background-image: url('../images/rafting_hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* REMOVED/MODIFIED: The large .hero section is removed to align with the sample layout. 
+   The <h1> is now styled as a regular heading (see section 5). 
 
-.hero h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    background-color: rgba(0,0,0,0.3);
-    padding: 10px 20px;
-    border-radius: 8px;
-}
+   The image that was likely used as the hero background in the HTML 
+   before the h1 will now be positioned above the content. 
+*/
 
 /* =========================
-   9. Article Section
+   9. Article Section (MODIFIED)
    ========================= */
 article {
     display: flex;
     gap: 20px;
-    background-color: var(--background-color);
-    border-radius: 8px;
+    /* Removed background color to match the sample's clean look */
+    background-color: transparent; 
+    border-radius: 0;
+    /* Adjusted margins to match general content margins */
+    margin: 16px; 
+    padding: 0; /* Remove padding here */
 }
 
 .article-img {
     width: 250px;
     height: auto;
-    border: 4px solid #ffffff;
+    /* Reduced/removed border to match the sample */
+    border: none; 
     border-radius: 8px;
     flex-shrink: 0;
 }
@@ -130,6 +145,8 @@ article {
 section {
     background-color: var(--section-color);
     border-radius: 8px;
+    margin: 32px 16px; /* Added vertical margin for spacing */
+    padding: 16px;
 }
 
 /* =========================
