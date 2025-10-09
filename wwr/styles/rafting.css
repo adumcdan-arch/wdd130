@@ -1,16 +1,10 @@
-That's a great approach! I'll provide the corrected CSS based on the adjustments we discussed to make your "About Us" page match the layout of your instructor's sample.
-
-Here is the revised CSS code for your styles/rafting.css:
-
-CSS
-
 /* =========================
    1. CSS Variables
    ========================= */
 :root {
     --primary-color: #0077b6; 	    /* main blue for headings and accents */
     --accent1-color: #023e8a; 	    /* body text color */
-    --background-color: #f8f9fa; /* light gray for article/sections - REMOVED FOR ARTICLE */
+    --background-color: #f8f9fa; /* light gray for article/sections - unused for article */
     --section-color: #f1f1f1; 	    /* slightly darker gray for sections */
     --body-font: 'Arial', sans-serif;
     --heading-font: 'Verdana', sans-serif;
@@ -43,34 +37,33 @@ header, main, footer {
 }
 
 /* =========================
-   5. Headings
+   5. Headings (MODIFIED)
    ========================= */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* New style for the main H1 in the content area */
+/* Style for the main H1 in the content area to match a standard title */
 main h1 {
     font-size: 2.5rem; 
     color: var(--accent1-color);
     padding: 16px;
-    margin: 16px 0 32px 16px; 
+    margin: 16px 0 32px 16px; /* Adds space above the article */
 }
 
-
 /* =========================
-   6. Basic Margins & Padding
+   6. Basic Margins & Padding (MODIFIED)
    ========================= */
-nav, p, section, article {
-    /* Adjusted article padding/margin is handled below */
+/* Default for elements that need spacing */
+nav, section {
     margin: 16px;
     padding: 8px;
 }
 
-/* Tighter spacing for paragraph text inside the article to align with the sample */
-article p {
-    margin: 0; 
+/* Paragraph spacing reset for use in the Article flex container */
+p {
+    margin: 0;
     padding: 8px;
 }
 
@@ -109,38 +102,34 @@ header nav a:hover {
 /* =========================
    8. Hero Section
    ========================= */
-/* REMOVED/MODIFIED: The large .hero section is removed to align with the sample layout. 
-   The <h1> is now styled as a regular heading (see section 5). 
+/* This section is REMOVED to align with the sample layout. */
 
-   The image that was likely used as the hero background in the HTML 
-   before the h1 will now be positioned above the content. 
-*/
 
 /* =========================
-   9. Article Section (MODIFIED)
+   9. Article Section (MODIFIED for sample look)
    ========================= */
 article {
     display: flex;
     gap: 20px;
-    /* Removed background color to match the sample's clean look */
+    /* Removed background and border radius */
     background-color: transparent; 
     border-radius: 0;
-    /* Adjusted margins to match general content margins */
+    /* Match the content width margins, but remove vertical padding */
     margin: 16px; 
-    padding: 0; /* Remove padding here */
+    padding: 0; 
 }
 
 .article-img {
     width: 250px;
     height: auto;
-    /* Reduced/removed border to match the sample */
+    /* Removed border to match sample */
     border: none; 
     border-radius: 8px;
     flex-shrink: 0;
 }
 
 /* =========================
-   10. Sections
+   10. Sections (History, Adventure) (MODIFIED)
    ========================= */
 section {
     background-color: var(--section-color);
