@@ -1,83 +1,151 @@
-/* Reset box model */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ====================================================
+   rafting.css
+   Author: [Your Full Name]
+   Project: WDD130 – White Water Rafting Site
+   File: rafting.css
+   Purpose: Styles for About Us page (W03 Assignment)
+   ==================================================== */
 
-/* CSS Variables */
+/* 1️⃣ Define color scheme and fonts using CSS variables */
 :root {
-    --body-font: Arial, sans-serif;
-    --heading-font: 'Roboto', sans-serif;
-    --primary-color: #004080;
-    --accent1-color: #007BFF;
+  --primary-color: #023047;      /* Headings and accents */
+  --secondary-color: #219ebc;    /* Nav and links */
+  --accent1-color: #000000;      /* Body text color */
+  --accent2-color: #ffb703;      /* Accent borders or highlights */
+  --heading-font: 'Trebuchet MS', Verdana, sans-serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Body Styling */
+/* 2️⃣ Reset box model for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3️⃣ Style the body text content */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
 
-/* Centering layout */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+/* 4️⃣ Limit page width and center layout */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+/* 5️⃣ Headings: font family and color */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-/* Basic spacing */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+/* 6️⃣ Standard margin and padding for key elements */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
 }
 
-/* Hero div */
+/* 7️⃣ Header section (logo + navigation) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+nav a:hover {
+  color: var(--accent2-color);
+}
+
+/* 8️⃣ Hero div and image setup */
 .hero {
-    position: relative;
+  position: relative; /* allows child absolute positioning */
 }
 
-/* Hero image */
+/* Hero image fills entire div */
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* Hero h1 overlay */
+/* h1 title overlayed on the hero image */
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff; /* white for contrast */
 }
 
-/* Article overlay inside hero */
+/* Article overlay within hero div */
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
 }
 
-/* Article image */
+/* Smaller image inside article */
 .hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 16px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  float: right;
+  width: 125px;
+  margin-left: 12px;
 }
 
-/* Footer social media links */
+/* 9️⃣ Section styling */
+section h2 {
+  border-bottom: 2px solid var(--accent2-color);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* 🔟 Footer styling */
+footer {
+  border-top: 2px solid var(--accent2-color);
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9em;
+}
+
+footer p {
+  color: var(--primary-color);
+}
+
+/* 11️⃣ Footer social media icons */
 .socialmedia a {
-    text-decoration: none;
+  text-decoration: none; /* remove underline from image links */
+  margin: 0 8px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
