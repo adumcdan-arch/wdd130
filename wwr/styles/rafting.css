@@ -53,7 +53,7 @@ p {
    Hero Logo
 ----------------------------- */
 .hero-logo {
-    position: absolute;
+    position: top;
     top: 20px;        /* space from the top of the hero image */
     left: 20px;       /* space from the left side */
     width: 90px;     /* adjust size as needed */
