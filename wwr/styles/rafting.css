@@ -1,34 +1,35 @@
-/* ================================================
+/* ====================================================
    rafting.css
    Author: [Your Full Name]
-   Description: Styles for WWR "About Us" page
-   Following W03 Assignment Instructions Exactly
-   ================================================ */
+   Project: WDD130 – White Water Rafting Site
+   File: rafting.css
+   Purpose: Styles for About Us page (W03 Assignment)
+   ==================================================== */
 
-/* 1️⃣ CSS Variables – Define a color scheme and fonts */
+/* 1️⃣ Define color scheme and fonts using CSS variables */
 :root {
-  --primary-color: #023047;      /* Heading color */
-  --secondary-color: #219ebc;    /* Link/nav color */
-  --accent1-color: #000000;      /* Main text color (black) */
-  --accent2-color: #ffb703;      /* Accent for dividers/highlights */
+  --primary-color: #023047;      /* Headings and accents */
+  --secondary-color: #219ebc;    /* Nav and links */
+  --accent1-color: #000000;      /* Body text color */
+  --accent2-color: #ffb703;      /* Accent borders or highlights */
   --heading-font: 'Trebuchet MS', Verdana, sans-serif;
-  --body-font: 'Arial', Helvetica, sans-serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* 2️⃣ Reset box-model for all elements */
+/* 2️⃣ Reset box model for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 3️⃣ Body text font and color */
+/* 3️⃣ Style the body text content */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
 
-/* 4️⃣ Limit width and center the content */
+/* 4️⃣ Limit page width and center layout */
 header,
 main,
 footer {
@@ -36,14 +37,14 @@ footer {
   margin: 0 auto;
 }
 
-/* 5️⃣ Headings font and color */
+/* 5️⃣ Headings: font family and color */
 h1,
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* 6️⃣ Basic margins and padding */
+/* 6️⃣ Standard margin and padding for key elements */
 nav,
 p,
 section,
@@ -52,12 +53,13 @@ article {
   padding: 8px;
 }
 
-/* 7️⃣ Header styling – includes logo and nav */
+/* 7️⃣ Header section (logo + navigation) */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header img {
@@ -76,31 +78,31 @@ nav a:hover {
   color: var(--accent2-color);
 }
 
-/* 8️⃣ Hero div styling */
+/* 8️⃣ Hero div and image setup */
 .hero {
-  position: relative;
+  position: relative; /* allows child absolute positioning */
 }
 
-/* Image fills container width */
+/* Hero image fills entire div */
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Hero heading overlay */
+/* h1 title overlayed on the hero image */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
   text-align: center;
+  padding: 16px;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text for contrast */
+  color: #fff; /* white for contrast */
 }
 
-/* Article overlay positioned over image */
+/* Article overlay within hero div */
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -110,11 +112,11 @@ nav a:hover {
   padding: 16px;
 }
 
-/* The smaller image in the article */
+/* Smaller image inside article */
 .hero article img {
   float: right;
   width: 125px;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 /* 9️⃣ Section styling */
@@ -136,9 +138,9 @@ footer p {
   color: var(--primary-color);
 }
 
-/* 11️⃣ Social media nav – remove underline from image links */
+/* 11️⃣ Footer social media icons */
 .socialmedia a {
-  text-decoration: none;
+  text-decoration: none; /* remove underline from image links */
   margin: 0 8px;
 }
 
