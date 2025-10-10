@@ -15,17 +15,16 @@ body {
 ----------------------------- */
 .hero-section {
     position: center;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-image {
     width: 100%;
-    max-width: 1200px;   /* instructor specified width */
-    height: 500px;       /* instructor specified height */
+    max-width: 1200px;  
+    height: 500px; 
     display: block;
     margin: 0 auto;
-    object-fit: cover;    /* keeps proportions without distortion */
-}
+    object-fit: cover; 
 
 .hero-title {
     position: absolute;
