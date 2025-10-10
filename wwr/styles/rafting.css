@@ -1,188 +1,184 @@
-/* -----------------------------
-   General Styles
------------------------------ */
+/* ================================================
+   rafting.css
+   Author: [Your Full Name]
+   Course: WDD130
+   Project: White Water Rafting Site
+   ================================================ */
+
+/* 1️⃣ CSS Variables (color scheme and fonts) */
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --accent1-color: #94d2bd;
+  --accent2-color: #e9d8a6;
+  --heading-font: 'Trebuchet MS', Verdana, sans-serif;
+  --body-font: 'Arial', Helvetica, sans-serif;
+}
+
+/* 2️⃣ Reset all elements’ box model and spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3️⃣ Body styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    max-width: 1200px;  
-    margin: 0 auto;
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #ffffff;
 }
 
-h1, h2, h3 {
-    margin: 10px 0;
+/* 4️⃣ Limit page width and center content */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
-p {
-    margin: 10px 0 25px 0;
+/* 5️⃣ Headings styling */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-/* -----------------------------
-   Hero Section
------------------------------ */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 500px;          /* Big hero image */
-    overflow: hidden;
+/* 6️⃣ Standard margins and padding */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;      /* cover top fully without distortion */
+/* 7️⃣ Header navigation styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
-.hero-title {
-    position: absolute;
-    top: 50%;
-    left: 20px;             /* align left */
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 3rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-align: left;
+header img {
+  height: 70px;
+  width: auto;
 }
 
-/* -----------------------------
-   Hero Logo
------------------------------ */
-.hero-logo {
-    position: top;
-    top: 20px;        /* space from the top of the hero image */
-    left: 20px;       /* space from the left side */
-    width: 90px;     /* adjust size as needed */
-    height: auto;
-    z-index: 10;      /* ensures the logo stays above the hero image */
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-left: 16px;
 }
 
-
-/* -----------------------------
-   About Section
------------------------------ */
-.about-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0;
-    text-align: left;      /* everything left-aligned */
+nav a:hover {
+  color: var(--accent2-color);
 }
 
-.about-image {
-    width: 250px;
-    height: auto;
-    margin-bottom: 20px;
+/* 8️⃣ Hero section styling */
+.hero {
+  position: relative;
 }
 
-/* About text */
-.about-text h2 {
-    color: #0077b6;
-    font-size: 1.8rem;
-    margin-top: 20px;
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.about-text p {
-    font-size: 1.1rem;
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 2em;
 }
 
-/* -----------------------------
-   History Section
------------------------------ */
-.history-section {
-    padding: 20px 0 40px 0;
-    max-width: 900px;
-    margin: 0;
-    text-align: left;
+/* 9️⃣ Hero article and inner image */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  border-radius: 8px;
 }
 
-.history-section h2 {
-    color: #0077b6;
-    font-size: 1.8rem;
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 6px;
 }
 
-.history-section p {
-    font-size: 1.1rem;
+/* 🔟 Section styling */
+section h2 {
+  border-bottom: 2px solid var(--accent2-color);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-/* -----------------------------
-   Adventure Section
------------------------------ */
-.adventure-section {
-    padding: 20px 0 40px 0;
-    max-width: 900px;
-    margin: 0;
-    text-align: left;
+/* 11️⃣ Footer styling */
+footer {
+  border-top: 2px solid var(--accent2-color);
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
 }
 
-.adventure-section h2 {
-    color: #0077b6;
-    font-size: 1.8rem;
+footer p {
+  color: var(--primary-color);
 }
 
-.adventure-section p {
-    font-size: 1.1rem;
+/* 12️⃣ Social media nav styling */
+.socialmedia {
+  margin-top: 8px;
 }
 
-/* -----------------------------
-   Social Media Section
------------------------------ */
-.social-section {
-    padding: 20px 0 40px 0;
-    max-width: 900px;
-    margin: 20;
-    text-align: left;
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 8px;
 }
 
-.social-icons a {
-    display: inline-block;  /* align horizontally */
-    margin-right: 20px;
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
+/* 13️⃣ Responsive adjustment for smaller screens */
+@media (max-width: 860px) {
+  header,
+  main,
+  footer {
+    width: 95%;
+  }
 
-.social-icons img:hover {
-    transform: scale(1.2);
-}
+  .hero article {
+    position: static;
+    float: none;
+    margin: 12px auto;
+  }
 
-/* -----------------------------
-   Responsive Design
------------------------------ */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-        padding: 10px 15px;
-    }
+  .hero h1 {
+    font-size: 1.5em;
+  }
 
-    .about-image {
-        width: 180px;
-    }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .social-icons img {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.5rem;
-        padding: 8px 10px;
-    }
-
-    .about-image {
-        width: 150px;
-    }
-
-    .social-icons img {
-        width: 30px;
-        height: 30px;
-    }
+  nav a {
+    margin: 8px;
+  }
 }
