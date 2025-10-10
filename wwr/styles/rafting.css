@@ -50,6 +50,19 @@ p {
 }
 
 /* -----------------------------
+   Hero Logo
+----------------------------- */
+.hero-logo {
+    position: absolute;
+    top: 20px;        /* space from the top of the hero image */
+    left: 20px;       /* space from the left side */
+    width: 120px;     /* adjust size as needed */
+    height: auto;
+    z-index: 10;      /* ensures the logo stays above the hero image */
+}
+
+
+/* -----------------------------
    About Section
 ----------------------------- */
 .about-section {
