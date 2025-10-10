@@ -14,7 +14,7 @@ body {
    Hero Section
 ----------------------------- */
 .hero-section {
-    position: absolute;
+    position: center;
     text-align: left;
 }
 
