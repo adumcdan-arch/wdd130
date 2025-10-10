@@ -120,7 +120,7 @@ p {
 .social-section {
     padding: 20px 0 40px 0;
     max-width: 900px;
-    margin: 0;
+    margin: 20;
     text-align: left;
 }
 
@@ -130,8 +130,8 @@ p {
 }
 
 .social-icons img {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     transition: transform 0.3s ease;
 }
 
