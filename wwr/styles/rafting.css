@@ -19,14 +19,13 @@ body {
 }
 
 .hero-image {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
+    width: 100%;           /* fills the container width */
+    max-width: 1200px;     /* matches instructor's width */
+    height: 500px;         /* matches instructor's height */
     display: block;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: cover;     /* keeps image proportions while filling the box */
 }
-
 .hero-title {
     position: absolute;
     top: 50%;
