@@ -1,86 +1,48 @@
-/* CSS Variables */
-:root {
-    --primary-color: #1E90FF;   /* Blue */
-    --accent1-color: #FF6347;   /* Orange/red */
-    --body-font: Arial, sans-serif;
-    --heading-font: 'Georgia', serif;
-}
-
-/* Reset Box Model */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-/* Center Content */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* Headings */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Basic Margin & Padding */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Social Media Links */
-.socialmedia a {
-    text-decoration: none;
-}
-.socialmedia img {
-    width: 32px;   /* or 40px, adjust as needed */
-    height: 32px;  /* keep square ratio */
-    vertical-align: middle;
-}
 /* Hero Section */
 .hero {
     position: relative;
     width: 100%;
-    height: 400px; /* adjust as needed */
+    height: 450px;
     background-image: url('../images/main_hero.jpg');
-    background-size: cover; /* fills the div */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Overlay H1 */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     text-align: center;
     padding: 16px;
-    background-color: rgba(255, 99, 71, 0.7); /* semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    font-size: 2rem;
 }
 
-/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 70%; /* optional, keeps text from stretching too wide */
+    width: 60%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 8px;
 }
 
-/* Client image inside article */
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 16px;
-    border-radius: 8px; /* optional, nicer style */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* optional shadow */
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+/* Footer Social Media Icons */
+footer .socialmedia img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
 }
