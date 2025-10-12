@@ -1,151 +1,150 @@
-/* ====================================================
-   rafting.css
-   Author: [Your Full Name]
-   Project: WDD130 – White Water Rafting Site
-   File: rafting.css
-   Purpose: Styles for About Us page (W03 Assignment)
-   ==================================================== */
-
-/* 1️⃣ Define color scheme and fonts using CSS variables */
 :root {
-  --primary-color: #023047;      /* Headings and accents */
-  --secondary-color: #219ebc;    /* Nav and links */
-  --accent1-color: #000000;      /* Body text color */
-  --accent2-color: #ffb703;      /* Accent borders or highlights */
-  --heading-font: 'Trebuchet MS', Verdana, sans-serif;
-  --body-font: Arial, Helvetica, sans-serif;
+/* change the values below to your colors from your palette */
+--primary-color: #002e5d;
+--secondary-color: #0062b8;
+--accent1-color: #ffffff;
+--accent2-color: #666666;
+
+
+/* change the values below to your chosen font(s) */
+--heading-font: Palatino, Georgia, serif;
+--paragraph-font: "Trebuchet MS", Arial, sans-serif;
+
+
+/* these colors below should be chosen from among your palette colors above */
+--headline-color-on-white: #002e5d; /* headlines on a white background */
+--headline-color-on-color: white; /* headlines on a colored background */
+--paragraph-color-on-white: #002e5d; /* paragraph text on a white background */
+--paragraph-color-on-color: #666666; /* paragraph text on a colored background */
+--paragraph-background-color: #ffffff;
+--nav-link-color: #ffffff;
+--nav-background-color: #002e5d;
+--nav-hover-link-color: #ffffff;
+--nav-hover-background-color: #0062b8;
 }
 
-/* 2️⃣ Reset box model for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* 3️⃣ Style the body text content */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+font-family: var(--paragraph-font);
+font-size: 22px;
+margin: 0;
+padding: 0;
 }
 
-/* 4️⃣ Limit page width and center layout */
-header,
-main,
-footer {
-  width: 840px;
-  margin: 0 auto;
+
+nav {
+display: flex;
+justify-content: space-around;
+background-color: var(--primary-color);
 }
 
-/* 5️⃣ Headings: font family and color */
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* 6️⃣ Standard margin and padding for key elements */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* 7️⃣ Header section (logo + navigation) */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-header img {
-  width: 100px;
-  height: auto;
-}
 
 nav a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-weight: bold;
-  margin-left: 16px;
+text-align: center;
+background-color: var(--nav-background-color);
+color: var(--nav-link-color);
+text-decoration: none;
+padding: 30px;
 }
-
 nav a:hover {
-  color: var(--accent2-color);
+background-color: var(--nav-hover-background-color);
+color: var(--nav-hover-link-color);
 }
 
-/* 8️⃣ Hero div and image setup */
-.hero {
-  position: relative; /* allows child absolute positioning */
+
+h1 {
+font-family: var(--heading-font);
+font-size: 2em;
+color: var(--headline-color-on-white);
+margin: 0;
+padding: 15px;
 }
 
-/* Hero image fills entire div */
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+
+main {
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+background-color: var(--paragraph-background-color);
+color: var(--paragraph-color-on-white);
+max-width: 800px;
+margin: 0 auto;
 }
 
-/* h1 title overlayed on the hero image */
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  text-align: center;
-  padding: 16px;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white for contrast */
+
+/* Updated: remove default paragraph padding */
+p {
+padding: 0;
 }
 
-/* Article overlay within hero div */
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 16px;
+
+/* Profile image inside main */
+main img {
+width: 150px;
+height: auto;
+margin-bottom: 15px;
 }
 
-/* Smaller image inside article */
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
+
+/* Aside section styling (added per assignment) */
+aside {
+width: 250px;
+margin: 20px auto;
+padding: 15px;
+border: 1px solid #ccc;
+background-color: #f5f5f5;
+color: #333;
+text-align: center;
 }
 
-/* 9️⃣ Section styling */
-section h2 {
-  border-bottom: 2px solid var(--accent2-color);
-  padding-bottom: 4px;
-  margin-bottom: 8px;
+
+aside img {
+width: 200px;
+height: auto;
+margin-bottom: 10px;
 }
 
-/* 🔟 Footer styling */
+
 footer {
-  border-top: 2px solid var(--accent2-color);
-  text-align: center;
-  padding: 12px;
-  font-size: 0.9em;
+margin-top: 30px;
+border-top: 2px solid #000;
+text-align: center;
+background-color: var(--primary-color);
+color: #ffffff;
+padding: 25px 50px;
+display: flex;
+justify-content: space-around;
+align-items: center;
 }
+
+
+footer a {
+color: #ffffff;
+text-decoration: none;
+}
+
+
+footer a:hover {
+color: var(--nav-hover-background-color);
+}
+
 
 footer p {
-  color: var(--primary-color);
+font-size: 1.2em;
 }
 
-/* 11️⃣ Footer social media icons */
-.socialmedia a {
-  text-decoration: none; /* remove underline from image links */
-  margin: 0 8px;
+
+footer p a:hover {
+text-decoration: underline;
 }
 
-.socialmedia img {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+
+footer .social img {
+width: 60px;
+height: 60px;
+padding-top: 15px;
 }
