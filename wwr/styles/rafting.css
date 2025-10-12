@@ -41,7 +41,11 @@ nav, p, section, article {
 .socialmedia a {
     text-decoration: none;
 }
-
+.socialmedia img {
+    width: 32px;   /* or 40px, adjust as needed */
+    height: 32px;  /* keep square ratio */
+    vertical-align: middle;
+}
 /* Hero Section */
 .hero {
     position: relative;
