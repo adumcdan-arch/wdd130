@@ -1,72 +1,77 @@
+/* CSS Variables */
 :root {
-/* change the values below to your colors from your palette */
---primary-color: #002e5d;
---secondary-color: #0062b8;
---accent1-color: #ffffff;
---accent2-color: #666666;
-
-
-/* change the values below to your chosen font(s) */
---heading-font: Palatino, Georgia, serif;
---paragraph-font: "Trebuchet MS", Arial, sans-serif;
-
-
-/* these colors below should be chosen from among your palette colors above */
---headline-color-on-white: #002e5d; /* headlines on a white background */
---headline-color-on-color: white; /* headlines on a colored background */
---paragraph-color-on-white: #002e5d; /* paragraph text on a white background */
---paragraph-color-on-color: #666666; /* paragraph text on a colored background */
---paragraph-background-color: #ffffff;
---nav-link-color: #ffffff;
---nav-background-color: #002e5d;
---nav-hover-link-color: #ffffff;
---nav-hover-background-color: #0062b8;
+    --primary-color: #1E90FF;   /* Blue */
+    --accent1-color: #FF6347;   /* Orange/red */
+    --body-font: Arial, sans-serif;
+    --heading-font: 'Georgia', serif;
 }
 
+/* Reset Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body Styling */
 body {
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-background-color: #ffffff;
-font-family: var(--paragraph-font);
-font-size: 22px;
-margin: 0;
-padding: 0;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
-
-nav {
-display: flex;
-justify-content: space-around;
-background-color: var(--primary-color);
+/* Center Content */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-
-nav a {
-text-align: center;
-background-color: var(--nav-background-color);
-color: var(--nav-link-color);
-text-decoration: none;
-padding: 30px;
-}
-nav a:hover {
-background-color: var(--nav-hover-background-color);
-color: var(--nav-hover-link-color);
+/* Headings */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-
-h1 {
-font-family: var(--heading-font);
-font-size: 2em;
-color: var(--headline-color-on-white);
-margin: 0;
-padding: 15px;
+/* Basic Margin & Padding */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
 
+/* Social Media Links */
+.socialmedia a {
+    text-decoration: none;
+}
 
-main {
-flex-grow: 1;
-display: flex;
-flex-direction: column;
-background-color: var(--paragraph-background-color);
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 8px;
+}
