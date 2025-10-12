@@ -1,4 +1,52 @@
-/* Hero Section */
+/* =========================
+   CSS Variables
+========================= */
+:root {
+    --primary-color: #0066cc;      /* headings */
+    --accent1-color: #ff6600;      /* body text color */
+    --body-font: Arial, sans-serif; 
+    --heading-font: 'Trebuchet MS', sans-serif;
+}
+
+/* =========================
+   Global Styles
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* =========================
+   Header
+========================= */
+.logo {
+    width: 120px;
+}
+
+/* =========================
+   Hero Section
+========================= */
 .hero {
     position: relative;
     width: 100%;
@@ -39,7 +87,17 @@
     margin-left: 10px;
 }
 
-/* Footer Social Media Icons */
+/* =========================
+   Footer
+========================= */
+footer .socialmedia {
+    margin-top: 16px;
+}
+
+footer .socialmedia a {
+    text-decoration: none;
+}
+
 footer .socialmedia img {
     width: 30px;
     height: 30px;
