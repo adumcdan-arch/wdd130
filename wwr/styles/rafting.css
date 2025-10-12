@@ -38,13 +38,17 @@ nav, p, section, article {
 }
 
 /* Social Media Links */
-.socialmedia a {
-    text-decoration: none;
-}
 .socialmedia img {
-    width: 32px;   /* or 40px, adjust as needed */
-    height: 32px;  /* keep square ratio */
+    width: 32px;       /* sets the icon width */
+    height: 32px;      /* keeps the icon square */
+    display: inline-block;
     vertical-align: middle;
+}
+
+.socialmedia a {
+    margin-right: 10px;  /* adds spacing between icons */
+    display: inline-block; /* ensures proper spacing */
+    text-decoration: none; /* removes underline */
 }
 /* Hero Section */
 .hero {
