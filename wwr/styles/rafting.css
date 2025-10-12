@@ -68,16 +68,19 @@ nav, p, section, article {
     width: 100%;
     text-align: center;
     padding: 16px;
-    background-color: rgba(255, 99, 71, 0.7); /* semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay behind text */
     color: #fff;
+    font-size: 2rem;
 }
 
-/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 70%; /* optional, keeps text from stretching too wide */
+    width: 60%; 
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay behind article */
+    color: #fff;
 }
 
 /* Client image inside article */
