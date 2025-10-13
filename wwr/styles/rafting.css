@@ -68,7 +68,7 @@ header nav a {
 }
 
 /* =========================
-   Hero Section
+   Hero Section - Overlay
 ========================= */
 .hero {
     position: relative;
@@ -104,6 +104,8 @@ header nav a {
     background-color: var(--overlay-light);
     color: #fff;
     border-radius: 8px;
+
+    /* Flex layout instead of float */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -113,6 +115,7 @@ header nav a {
     width: 120px;
     height: auto;
     border-radius: 8px;
+    /* float removed */
 }
 
 /* =========================
