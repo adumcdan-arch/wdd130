@@ -140,7 +140,7 @@ header nav a {
 }
 
 .adventure-grid figure {
-    flex: 1 1 calc(20% - 10px);
+    flex: 1 1 calc(20% - 10px); /* Ensures five images in a row */
     text-align: center;
 }
 
