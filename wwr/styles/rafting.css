@@ -93,7 +93,9 @@ header nav a {
     color: #fff;
     font-size: 2rem;
     border-radius: 4px;
-hero article {
+}
+
+.hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -102,10 +104,8 @@ hero article {
     background-color: var(--overlay-light);
     color: #fff;
     border-radius: 8px;
-
-    display: flex;              /* use Flexbox */
+    display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
 }
 
@@ -114,6 +114,7 @@ hero article {
     height: auto;
     border-radius: 8px;
 }
+
 /* =========================
    History Section
 ========================= */
