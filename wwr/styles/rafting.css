@@ -156,7 +156,14 @@ header nav a {
     font-weight: bold;
     color: var(--primary-color);
 }
-
+/* =========================
+   Section Headings
+========================= */
+section h2 {
+    text-align: center;   /* center the headings */
+    margin-bottom: 16px;  /* space below heading */
+    color: var(--primary-color);
+}
 /* =========================
    Footer - Flex Layout
 ========================= */
