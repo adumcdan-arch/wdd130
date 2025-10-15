@@ -215,7 +215,7 @@ footer .socialmedia a img:hover {
 
 .company-info {
     text-align: center;       /* centers text inside the section */
-    margin: 20px auto;        /* centers the section itself horizontally */
+    margin: 20px 0;        /* centers the section itself horizontally */
     display: block;           /* ensures it behaves like a block element */
     width: 100%;              /* takes full width of the container */
     line-height: 1.2;
