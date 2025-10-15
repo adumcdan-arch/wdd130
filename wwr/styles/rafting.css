@@ -22,12 +22,17 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    line-height: 1.6;
+    line-height: 1.4; /* reduced from 1.6 to tighten spacing */
+}
+
+p {
+    margin: 6px 0; /* reduced from 16px */
 }
 
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    margin-bottom: 8px; /* reduced spacing after headings */
 }
 
 header, main, footer {
@@ -35,9 +40,9 @@ header, main, footer {
     margin: 0 auto;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+nav, section, article {
+    margin: 12px 16px;  /* slightly reduced */
+    padding: 4px 8px;   /* slightly reduced */
 }
 
 /* =========================
@@ -106,7 +111,7 @@ header nav a {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px; /* reduced from 10px */
 }
 
 .hero article img {
@@ -120,7 +125,7 @@ header nav a {
 ========================= */
 .history-content {
     display: flex;
-    gap: 20px;
+    gap: 10px; /* reduced from 20px */
     align-items: flex-start;
 }
 
@@ -162,7 +167,7 @@ header nav a {
 ========================= */
 section h2 {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     color: var(--primary-color);
 }
 
@@ -193,6 +198,11 @@ footer .socialmedia a img:hover {
 /* =========================
    Contact Page Styles
 ========================= */
+.company-info {
+    text-align: center;   /* centers heading + address, phone, email */
+    margin: 20px auto;
+}
+
 .contact-section {
     display: flex;
     gap: 2rem;
@@ -212,14 +222,6 @@ footer .socialmedia a img:hover {
     border-radius: 8px;
 }
 
-
-.company-info {
-    text-align: center;       /* centers text inside the section */
-    margin: 20px auto;        /* centers the section itself horizontally */
-    display: block;           /* ensures it behaves like a block element */
-    width: 100%;              /* takes full width of the container */
-}
-
 .contact-form {
     flex: 1;
     min-width: 300px;
@@ -228,18 +230,25 @@ footer .socialmedia a img:hover {
     gap: 12px;
 }
 
-.contact-form label {
+/* Side-by-side labels */
+.contact-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* tighter spacing */
+}
+
+.contact-form .form-group label {
+    width: 120px; /* fixed width for labels */
     font-weight: bold;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    flex: 1;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-family: var(--body-font);
-    width: 100%;
 }
 
 .contact-form input[type="submit"] {
@@ -254,7 +263,7 @@ footer .socialmedia a img:hover {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #004999; /* darker shade for hover */
+    background-color: #004999;
 }
 
 .team-profiles {
