@@ -243,6 +243,24 @@ footer .socialmedia a img:hover {
     width: 100%;
 }
 
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.contact-form label[for="general"],
+.contact-form label[for="reservation"],
+.contact-form label[for="suggestion"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
 .contact-form input[type="submit"] {
     background-color: var(--primary-color);
     color: #fff;
