@@ -212,10 +212,12 @@ footer .socialmedia a img:hover {
     border-radius: 8px;
 }
 
-* Center the company info section */
+
 .company-info {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center;       /* centers text inside the section */
+    margin: 20px auto;        /* centers the section itself horizontally */
+    display: block;           /* ensures it behaves like a block element */
+    width: 100%;              /* takes full width of the container */
 }
 
 .contact-form {
