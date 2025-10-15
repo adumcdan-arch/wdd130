@@ -254,6 +254,11 @@ footer .socialmedia a img:hover {
     transition: background-color 0.2s;
 }
 
+.contact-form textarea {
+    height: 100px;    /* adjust to make it slim */
+    resize: vertical; /* allow vertical resizing */
+}
+
 .contact-form input[type="submit"]:hover {
     background-color: #004999; /* darker shade for hover */
 }
