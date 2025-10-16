@@ -2,15 +2,15 @@
    CSS Variables
 ========================= */
 :root {
-    --primary-color: #0066cc;      /* Headings and accents (blue) */
-    --accent1-color: #ff6600;      /* Highlight and button color (orange) */
-    --text-color: #333333;         /* Dark text for high contrast */
-    --background-color: #ffffff;   /* Clean white background */
-    --header-footer-bg: #003366;   /* Deep blue for header/footer contrast */
+    --primary-color: #0066cc;      
+    --accent1-color: #ff6600;      
+    --text-color: #333333;         
+    --background-color: #ffffff;   
+    --header-footer-bg: #003366;   
     --body-font: Arial, sans-serif; 
     --heading-font: 'Trebuchet MS', sans-serif;
-    --overlay-dark: rgba(0, 0, 0, 0.5);   /* Hero heading overlay */
-    --overlay-light: rgba(0, 0, 0, 0.4);  /* Hero article overlay */
+    --overlay-dark: rgba(0, 0, 0, 0.5);   
+    --overlay-light: rgba(0, 0, 0, 0.4);  
 }
 
 /* =========================
@@ -198,12 +198,12 @@ footer .socialmedia a img {
     margin: 0 5px;
     vertical-align: middle;
     transition: transform 0.2s;
-    filter: none; /* ensures icons are visible on dark background */
+    filter: none;
 }
 
 footer .socialmedia a img:hover {
     transform: scale(1.1);
-    filter: none; /* hover contrast effect */
+    filter: none;
 }
 
 /* =========================
@@ -216,38 +216,6 @@ footer .socialmedia a img:hover {
     margin: 20px;
 }
 
-
-
-/* -------------------------
-   Radio Buttons Alignment
-------------------------- */
-.radio-group {
-    display: flex;
-    align-items: center; /* aligns radio button and label vertically */
-    gap: 8px;            /* spacing between button and text */
-    margin-bottom: 8px;  /* spacing between each radio option */
-}
-
-.radio-group input[type="radio"] {
-    margin: 0;               /* Remove extra spacing */
-}
-
-.radio-group label {
-    display: inline;         /* Let flex handle alignment */
-    width: auto;             /* Ignore general label width */
-    text-align: left;        
-    vertical-align: middle;
-    font-weight: normal;     
-}
-
-/* Prevent general labels from affecting radio labels */
-.contact-form label:not(.radio-group label) {
-    display: inline-block;
-    width: 120px;            /* keeps text input labels aligned in rows */
-    text-align: right;
-    margin-right: 10px;
-    font-weight: bold;
-}
 .map-container {
     flex: 1;
     min-width: 300px;
@@ -273,7 +241,7 @@ footer .socialmedia a img:hover {
 .contact-form {
     flex: 1;
     min-width: 300px;
-    max-width: 400px;   /* keeps form next to the map */
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -283,11 +251,10 @@ footer .socialmedia a img:hover {
     font-weight: bold;
 }
 
-/* New rule for horizontal label-input alignment */
 .input-group {
     display: flex;
     align-items: center;
-    gap: 5px;  /* smaller gap between label and input */
+    gap: 5px;
 }
 
 .contact-form input[type="text"],
@@ -302,35 +269,43 @@ footer .socialmedia a img:hover {
     background-color: #f9f9f9;
 }
 
-/* Add the checkbox style here */
-.contact-form input[type="checkbox"] {
-    vertical-align: middle;   /* aligns checkbox with label text */
-    margin-right: 8px;        /* space between checkbox and label */
-}
-
-.newsletter-container {
-    display: flex;
-    align-items: center;  /* vertically aligns checkbox and label */
-    gap: 8px;             /* space between checkbox and text */
-}
-
 .contact-form textarea {
     height: 100px;
     resize: vertical;
 }
 
-.contact-form input[type="radio"] {
-    vertical-align: middle;
-    margin-right: 6px;
+/* --- FIX START --- */
+/* Align radio buttons neatly with their labels */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
-.contact-form label[for="general"],
-.contact-form label[for="reservation"],
-.contact-form label[for="suggestion"] {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 12px;
+.radio-group input[type="radio"] {
+    margin: 0;
+    accent-color: var(--primary-color);
 }
+
+.radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Align newsletter checkbox with label */
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.newsletter-container input[type="checkbox"] {
+    margin: 0;
+    accent-color: var(--accent1-color);
+}
+/* --- FIX END --- */
 
 .contact-form input[type="submit"] {
     background-color: var(--accent1-color);
@@ -345,46 +320,6 @@ footer .socialmedia a img:hover {
 
 .contact-form input[type="submit"]:hover {
     background-color: #cc5200;
-}
-
-.contact-form label {
-    display: inline-block;
-    width: 120px; /* adjust width as needed */
-    text-align: right; /* aligns the text to the right, near the input box */
-    margin-right: 10px; /* space between label and input */
-    font-weight: bold;
-}
-
-
-/* Align labels and inputs in a row */
-.contact-form label {
-    display: inline-block;
-    width: 120px; /* adjust as needed */
-    font-weight: bold;
-    vertical-align: middle;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
-    display: inline-block;
-    width: calc(100% - 130px); /* full width minus label width + gap */
-    vertical-align: middle;
-}
-
-.newsletter-container {
-    display: flex;
-    align-items: center;  /* vertically aligns checkbox and label */
-    gap: 8px;             /* space between checkbox and text */
-}
-
-.input-group {
-    display: flex;
-    align-items: center;   /* vertically align label with input */
-    gap: 10px;             /* space between label and input */
-}
-
-.input-group label {
-    min-width: 100px;      /* optional, makes labels same width */
 }
 
 .team-profiles {
