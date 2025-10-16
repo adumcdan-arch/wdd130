@@ -275,12 +275,13 @@ footer .socialmedia a img:hover {
 }
 
 /* --- FIX START --- */
-/* Align radio buttons neatly with their labels */
+/* Align radio buttons neatly with their labels — keep text on one line */
 .radio-group {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 8px;
+    white-space: nowrap; /* prevents text from breaking into multiple lines */
 }
 
 .radio-group input[type="radio"] {
@@ -291,14 +292,16 @@ footer .socialmedia a img:hover {
 .radio-group label {
     font-weight: normal;
     cursor: pointer;
+    white-space: nowrap; /* ensures each label stays on one line */
 }
 
-/* Align newsletter checkbox with label */
+/* Align newsletter checkbox with label — keep text on one line */
 .newsletter-container {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-top: 10px;
+    white-space: nowrap; /* prevents wrapping */
 }
 
 .newsletter-container input[type="checkbox"] {
