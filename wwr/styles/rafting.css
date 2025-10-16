@@ -216,23 +216,25 @@ footer .socialmedia a img:hover {
     margin: 20px;
 }
 
+/* Radio button alignment */
 .radio-group {
-    display: flex;           /* Align label and input horizontally */
-    align-items: center;     /* Vertically center the label with the radio button */
-    gap: 8px;                /* Space between button and label */
-    margin-bottom: 8px;      /* Space between options */
+    display: flex;           /* Align radio button and label horizontally */
+    align-items: center;     /* Vertically center text with the circle */
+    gap: 8px;                /* Space between circle and text */
+    margin-bottom: 8px;
 }
 
 .radio-group input[type="radio"] {
-    width: auto;             /* Keep the default radio size */
     margin: 0;               /* Remove extra spacing */
 }
 
 .radio-group label {
-    vertical-align: middle;  /* Align text with radio button */
-    font-weight: normal;     /* Or bold, if desired */
+    display: inline;         /* Let flex control alignment */
+    width: auto;             /* Ignore fixed width from general labels */
+    text-align: left;        /* Normal text alignment */
+    font-weight: normal;     /* Optional */
+    vertical-align: middle;
 }
-
 .map-container {
     flex: 1;
     min-width: 300px;
