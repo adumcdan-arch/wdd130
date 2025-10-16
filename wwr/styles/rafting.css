@@ -216,6 +216,13 @@ footer .socialmedia a img:hover {
     margin: 20px;
 }
 
+.radio-group {
+    display: flex;
+    align-items: center; /* aligns radio button and label vertically */
+    gap: 8px;            /* spacing between button and text */
+    margin-bottom: 8px;  /* spacing between each radio option */
+}
+
 .map-container {
     flex: 1;
     min-width: 300px;
