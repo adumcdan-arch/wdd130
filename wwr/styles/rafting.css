@@ -3,7 +3,7 @@
 ========================= */
 :root {
     --primary-color: #0066cc;      
-    --accent1-color: #ff6600;      
+    --accent1-color: #cf2600;      
     --text-color: #333333;         
     --background-color: #ffffff;   
     --header-footer-bg: #003366;   
@@ -322,7 +322,7 @@ footer .socialmedia a img:hover {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #8a1c00;
+    background-color: #cf2600;
 }
 
 .team-profiles {
