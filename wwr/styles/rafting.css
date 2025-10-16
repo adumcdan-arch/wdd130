@@ -258,6 +258,13 @@ footer .socialmedia a img:hover {
     font-weight: bold;
 }
 
+/* New rule for horizontal label-input alignment */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;  /* smaller gap between label and input */
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
