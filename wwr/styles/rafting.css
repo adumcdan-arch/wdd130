@@ -308,21 +308,6 @@ footer .socialmedia a img:hover {
     background-color: #cc5200;
 }
 
-.contact-form label {
-    display: inline-block;
-    width: 120px; /* adjust width as needed */
-    text-align: right; /* aligns the text to the right, near the input box */
-    margin-right: 10px; /* space between label and input */
-    font-weight: bold;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
-    width: calc(100% - 140px); /* full width minus label width + margin */
-}
-
-
-
 .team-profiles {
     display: flex;
     gap: 2rem;
