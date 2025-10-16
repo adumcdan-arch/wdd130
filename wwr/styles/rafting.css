@@ -216,12 +216,14 @@ footer .socialmedia a img:hover {
     margin: 20px;
 }
 
-/* Radio button alignment */
+/* -------------------------
+   Radio Buttons Alignment
+------------------------- */
 .radio-group {
-    display: flex;           /* Align radio button and label horizontally */
-    align-items: center;     /* Vertically center text with the circle */
+    display: flex;           /* Put radio button and label in a row */
+    align-items: center;     /* Vertically center label with the circle */
     gap: 8px;                /* Space between circle and text */
-    margin-bottom: 8px;
+    margin-bottom: 8px;      /* Space between each radio option */
 }
 
 .radio-group input[type="radio"] {
@@ -229,11 +231,20 @@ footer .socialmedia a img:hover {
 }
 
 .radio-group label {
-    display: inline;         /* Let flex control alignment */
-    width: auto;             /* Ignore fixed width from general labels */
-    text-align: left;        /* Normal text alignment */
-    font-weight: normal;     /* Optional */
+    display: inline;         /* Let flex handle alignment */
+    width: auto;             /* Ignore general label width */
+    text-align: left;        
     vertical-align: middle;
+    font-weight: normal;     
+}
+
+/* Prevent general labels from affecting radio labels */
+.contact-form label:not(.radio-group label) {
+    display: inline-block;
+    width: 120px;            /* keeps text input labels aligned in rows */
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
 }
 .map-container {
     flex: 1;
