@@ -270,6 +270,11 @@ footer .socialmedia a img:hover {
     background-color: #f9f9f9;
 }
 
+.contact-form input[type="checkbox"] {
+    vertical-align: middle;   /* aligns checkbox with label text */
+    margin-right: 8px;        /* space between checkbox and label */
+}
+
 .contact-form textarea {
     height: 100px;
     resize: vertical;
