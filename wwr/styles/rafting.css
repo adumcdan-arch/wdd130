@@ -321,6 +321,21 @@ footer .socialmedia a img:hover {
     width: calc(100% - 140px); /* full width minus label width + margin */
 }
 
+/* Align labels and inputs in a row */
+.contact-form label {
+    display: inline-block;
+    width: 120px; /* adjust as needed */
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    display: inline-block;
+    width: calc(100% - 130px); /* full width minus label width + gap */
+    vertical-align: middle;
+}
+
 .team-profiles {
     display: flex;
     gap: 2rem;
