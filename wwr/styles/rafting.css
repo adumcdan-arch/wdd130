@@ -203,7 +203,7 @@ footer .socialmedia a img {
 
 footer .socialmedia a img:hover {
     transform: scale(1.1);
-    filter: brightness(1) invert(0); /* hover contrast effect */
+    filter: none; /* hover contrast effect */
 }
 
 /* =========================
