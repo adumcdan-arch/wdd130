@@ -217,10 +217,20 @@ footer .socialmedia a img:hover {
 }
 
 .radio-group {
-    display: flex;
-    align-items: center; /* aligns radio button and label vertically */
-    gap: 8px;            /* spacing between button and text */
-    margin-bottom: 8px;  /* spacing between each radio option */
+    display: flex;           /* Align label and input horizontally */
+    align-items: center;     /* Vertically center the label with the radio button */
+    gap: 8px;                /* Space between button and label */
+    margin-bottom: 8px;      /* Space between options */
+}
+
+.radio-group input[type="radio"] {
+    width: auto;             /* Keep the default radio size */
+    margin: 0;               /* Remove extra spacing */
+}
+
+.radio-group label {
+    vertical-align: middle;  /* Align text with radio button */
+    font-weight: normal;     /* Or bold, if desired */
 }
 
 .map-container {
