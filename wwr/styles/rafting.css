@@ -248,10 +248,10 @@ footer .socialmedia a img:hover {
 .contact-form {
     flex: 1;
     min-width: 300px;
+    max-width: 400px;   /* keeps form next to the map */
     display: flex;
     flex-direction: column;
     gap: 12px;
-    color: var(--text-color);
 }
 
 .contact-form label {
@@ -334,6 +334,16 @@ footer .socialmedia a img:hover {
     display: inline-block;
     width: calc(100% - 130px); /* full width minus label width + gap */
     vertical-align: middle;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;   /* vertically align label with input */
+    gap: 10px;             /* space between label and input */
+}
+
+.input-group label {
+    min-width: 100px;      /* optional, makes labels same width */
 }
 
 .team-profiles {
