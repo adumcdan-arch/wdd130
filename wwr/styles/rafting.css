@@ -336,6 +336,16 @@ footer .socialmedia a img:hover {
     vertical-align: middle;
 }
 
+.input-group {
+    display: flex;
+    align-items: center;   /* vertically align label with input */
+    gap: 10px;             /* space between label and input */
+}
+
+.input-group label {
+    min-width: 100px;      /* optional, makes labels same width */
+}
+
 .team-profiles {
     display: flex;
     gap: 2rem;
