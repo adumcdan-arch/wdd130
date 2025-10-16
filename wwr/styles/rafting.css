@@ -198,7 +198,7 @@ footer .socialmedia a img {
     margin: 0 5px;
     vertical-align: middle;
     transition: transform 0.2s;
-    filter: brightness(0) invert(1); /* ensures icons are visible on dark background */
+    filter: none; /* ensures icons are visible on dark background */
 }
 
 footer .socialmedia a img:hover {
