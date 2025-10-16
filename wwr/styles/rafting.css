@@ -216,14 +216,16 @@ footer .socialmedia a img:hover {
     margin: 20px;
 }
 
+
+
 /* -------------------------
    Radio Buttons Alignment
 ------------------------- */
 .radio-group {
-    display: flex;           /* Put radio button and label in a row */
-    align-items: center;     /* Vertically center label with the circle */
-    gap: 8px;                /* Space between circle and text */
-    margin-bottom: 8px;      /* Space between each radio option */
+    display: flex;
+    align-items: center; /* aligns radio button and label vertically */
+    gap: 8px;            /* spacing between button and text */
+    margin-bottom: 8px;  /* spacing between each radio option */
 }
 
 .radio-group input[type="radio"] {
@@ -299,6 +301,13 @@ footer .socialmedia a img:hover {
     color: var(--text-color);
     background-color: #f9f9f9;
 }
+
+/* Add the checkbox style here */
+.contact-form input[type="checkbox"] {
+    vertical-align: middle;   /* aligns checkbox with label text */
+    margin-right: 8px;        /* space between checkbox and label */
+}
+
 .newsletter-container {
     display: flex;
     align-items: center;  /* vertically aligns checkbox and label */
@@ -364,6 +373,12 @@ footer .socialmedia a img:hover {
     display: inline-block;
     width: calc(100% - 130px); /* full width minus label width + gap */
     vertical-align: middle;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;  /* vertically aligns checkbox and label */
+    gap: 8px;             /* space between checkbox and text */
 }
 
 .input-group {
