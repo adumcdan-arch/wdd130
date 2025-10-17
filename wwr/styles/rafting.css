@@ -412,132 +412,222 @@ footer .socialmedia a img:hover {
     }
 }
 
-/* Home Page Writings Decoration */
-.home-main h1 {
-    font-size: 3rem;
-    font-weight: 900; /* extra bold */
-    color: #007228;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    margin-bottom: 0.5rem;
+/* =========================================================
+   HOME PAGE STYLES (index.html only)
+   These styles only apply to elements within .home-main
+   ========================================================= */
+
+.home-main {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
 }
 
-/* What We Offer Section */
-.home-main .offerings h2 {
-    text-align: center;
-    color: #004e89;        /* Deep rafting blue tone */
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 2rem 0 1rem 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.home-main p {
-    font-size: 1.2rem;
-    font-weight: 500; /* medium */
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    margin-bottom: 1.5rem;
-}
-
-.home-main .cta-button {
-    font-weight: 700;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.1rem;
-    background-color: #ffffff;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.home-main .cta-button:hover {
-    background-color: #00487c;
-    transform: translateY(-2px);
-}
-
-/* Newsletter Headings */
-.home-main .newsletter h2 {
-    font-size: 2rem;
-    font-weight: 800; /* bold */
-    color: #0077cc;
-    margin-bottom: 1rem;
-}
-
-.home-main .newsletter label {
-    font-weight: 600;
-    color: #333;
-}
-
-.home-main .newsletter input {
-    font-weight: 500;
-}
-
-.home-main .newsletter button {
-    font-weight: 700; /* bold */
-    text-transform: uppercase;
-}
-
-/* Grid Section Headings */
-.home-main .offerings h3 {
-    font-size: 1.5rem;
-    font-weight: 700; /* bold */
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #0077cc;
-}
-
-.home-main .offerings p {
-    font-size: 1rem;
-    font-weight: 500; /* medium */
-    color: #333;
-}
-
-/* Home Page Hero Section */
+/* ===== HERO SECTION ===== */
 .home-main .hero {
     position: relative;
     width: 100%;
-    height: 75vh; /* Adjust height (70–90vh based on preference) */
+    height: 75vh;
     background-image: url("../images/home_hero.jpg");
     background-size: cover;
-    background-position: center; /* can change to top, bottom, or specific % */
+    background-position: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
-
-.home-main .hero-image {
+.home-main .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    margin-bottom: 2rem; /* Space between image and text */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* overlay for readability */
+    z-index: 1;
 }
 
-.home-main .cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    font-weight: 700;
+.home-main .hero h1,
+.home-main .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.home-main .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: none; /* Title Case */
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.home-main .hero p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* ===== NEWSLETTER SECTION ===== */
+.home-main .newsletter {
+    background-color: #f0f8ff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-main .newsletter h2 {
+    color: #004e89;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.home-main .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home-main .newsletter input[type="text"],
+.home-main .newsletter input[type="email"] {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.home-main .newsletter button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #004e89;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.home-main .newsletter button:hover {
     background-color: #0077cc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.home-main .cta-button:hover {
-    background-color: #005fa3; /* Darker shade on hover */
+/* ===== CALL TO ACTION SECTION ===== */
+.home-main .cta {
+    background-color: #004e89;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 3rem 0;
 }
-.home-main .hero-text h1 {
-    font-size: 2.0rem; /* Larger size for prominence */
-    font-weight: 900;  /* Extra bold for emphasis */
-    color: #ffffff;    /* Deep blue for a strong visual impact */
-    text-transform: uppercase; /* Adds a sense of importance */
-    letter-spacing: 2px; /* Slightly increased letter spacing */
-    margin-bottom: 1.5rem; /* Adjusted spacing for balance */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+
+.home-main .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-main .cta a {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+
+.home-main .cta a:hover {
+    background-color: #ffd166;
+}
+
+/* ===== WHAT WE OFFER SECTION ===== */
+.home-main .offerings {
+    background-color: #f9fcff;
+    padding: 2rem 1rem 3rem;
+    border-radius: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-main .offerings h2 {
+    text-align: center;
+    color: #004e89;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tab buttons */
+.home-main .tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.home-main .tab-button {
+    background-color: #004e89;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.home-main .tab-button:hover,
+.home-main .tab-button.active {
+    background-color: #0077cc;
+}
+
+/* Tab content */
+.home-main .tab-content {
+    display: none;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-main .tab-content.active {
+    display: block;
+}
+
+.home-main .tab-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home-main .tab-content p {
+    color: #0077cc;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .home-main .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-main .hero p {
+        font-size: 1.1rem;
+    }
+
+    .home-main .offerings h2 {
+        font-size: 1.6rem;
+    }
 }
