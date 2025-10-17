@@ -769,10 +769,10 @@ form {
 }
 
 .trips-hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     z-index: 2;
     margin-bottom: 1rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1.2;
     color: #ffffff; /* White color */
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* Optional: subtle shadow for readability */
