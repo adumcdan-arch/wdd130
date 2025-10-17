@@ -510,6 +510,16 @@ footer .socialmedia a img:hover {
     z-index: 2;
 }
 
+/* Bring hero text and button above overlay */
+.home-main .hero-text,
+.home-main .hero-text h1,
+.home-main .hero-text p,
+.home-main .hero-text .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+
 /* Hero main heading (McDan Whitewater Rafting) */
 .home-main .hero h1 {
     font-size: 3rem;
@@ -639,6 +649,8 @@ form {
     background-color: #e33a1a; /* slightly lighter on hover */
     transform: translateY(-2px); /* subtle lift effect */
 }
+
+
 /* ==========================================
    OFFERINGS SECTION (Three image panels)
    ========================================== */
