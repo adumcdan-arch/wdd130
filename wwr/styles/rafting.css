@@ -421,12 +421,15 @@ footer .socialmedia a img:hover {
     margin-bottom: 0.5rem;
 }
 
-.home-main h2 {
+/* What We Offer Section */
+.home-main .offerings h2 {
+    text-align: center;
+    color: #004e89;        /* Deep rafting blue tone */
     font-size: 2rem;
-    font-weight: 700; /* bold */
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    margin-bottom: 1rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .home-main p {
