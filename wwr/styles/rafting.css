@@ -736,7 +736,7 @@ form {
 .home-main .offerings-grid figcaption {
     padding: 1rem;
     font-weight: 600;
-    color: #003762;
+    color: #cf2600; /* Trips page orange */
 }
 
 .home-main .offerings-grid {
