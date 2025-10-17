@@ -774,12 +774,17 @@ form {
     margin-bottom: 1rem;
     font-weight: 800;
     line-height: 1.2;
+    color: #ffffff; /* White color */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* Optional: subtle shadow for readability */
 }
 
 .trips-hero p {
     font-size: 1.3rem;
+    font-weight: 700;
     z-index: 2;
     margin-bottom: 1.5rem;
+    color: #ffffff; /* White text */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .trips-hero .cta-button {
