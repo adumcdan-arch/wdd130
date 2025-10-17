@@ -381,7 +381,7 @@ footer .socialmedia a img:hover {
 /* Paragraph under hero heading in a black box */
 .hero-paragraph {
     background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
-    color: #FF8C00;                       /* dark orange text */
+    color: #ff6f00;                       /* dark orange text */
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
