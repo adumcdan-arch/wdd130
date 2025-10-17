@@ -359,10 +359,29 @@ footer .socialmedia a img:hover {
         margin-left: 8px;
     }
 
-    .hero h1 {
-        font-size: 1.6rem;
-        padding: 12px;
-    }
+    /* === NEW HERO TEXT STYLES === */
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-text p {
+    position: relative;
+    z-index: 2; /* ensures paragraph sits above overlay */
+}
+
+.hero-text .cta-button {
+    position: relative;
+    z-index: 2;
+}
 
     .history-content {
         flex-direction: column;
@@ -674,4 +693,12 @@ footer .socialmedia a img:hover {
     .home-main .offerings-grid {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 { font-size: 1.8rem; }
 }
