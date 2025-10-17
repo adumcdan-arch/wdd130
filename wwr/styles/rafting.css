@@ -491,20 +491,6 @@ footer .socialmedia a img:hover {
     overflow: hidden;
 }
 
-home-main .home-hero {
-    position: relative;
-    width: 100%;
-    min-height: 450px;  /* ensures hero is tall enough */
-    display: flex;
-    justify-content: center; /* center content horizontally */
-    align-items: center;     /* center content vertically */
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
-    color: #ffffff;
-}
-
 /* Overlay for better text visibility */
 .home-main .hero::after {
     content: "";
@@ -636,24 +622,6 @@ form {
     margin-bottom: 1rem;
 }
 
-/* Home page hero button - identical to Trips page */
-.home-main .cta-button {
-    display: inline-block;
-    background-color: #cf2600;  /* exact Trips page button color */
-    color: #ffffff;             /* white text */
-    font-weight: bold;
-    font-size: 1.1rem;          /* same size as Trips page button */
-    padding: 0.85rem 1.75rem;   /* same padding as Trips page button */
-    border-radius: 6px;         /* rounded corners */
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.home-main .cta-button:hover {
-    background-color: #e33a1a;  /* slightly lighter on hover */
-    transform: translateY(-2px); /* subtle lift */
-}
-
 /* CTA button link */
 .home-main .cta a {
     display: inline-block;
@@ -667,9 +635,8 @@ form {
 }
 
 /* CTA hover effect */
-.home-main .cta-button:hover {
-    background-color: #e33a1a; /* slightly lighter orange on hover */
-    transform: translateY(-2px);
+.home-main .cta a:hover {
+    background-color: #ffd166;
 }
 
 /* ==========================================
@@ -812,13 +779,27 @@ form {
 }
 
 .trips-hero p {
-    font-size: 1.0rem;
+    font-size: 1.3rem;
     z-index: 2;
     margin-bottom: 1.5rem;
     color: #ffffff; /* White text */
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
+.trips-hero .cta-button {
+    z-index: 2;
+    text-decoration: none;
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.trips-hero .cta-button:hover {
+    background-color: #e64b39;
+}
 
 /* =========================
    Trip Cards Grid
