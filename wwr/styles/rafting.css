@@ -378,6 +378,19 @@ footer .socialmedia a img:hover {
     z-index: 2; /* ensures paragraph sits above overlay */
 }
 
+/* Paragraph under hero heading in a black box */
+.hero-paragraph {
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    color: #FF8C00;                       /* dark orange text */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;                /* box wraps tightly around text */
+    margin-top: 1rem;                     /* spacing below heading */
+    text-align: center;
+}
+
 .hero-text .cta-button {
     position: relative;
     z-index: 2;
