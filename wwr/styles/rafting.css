@@ -383,7 +383,7 @@ footer .socialmedia a img:hover {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     display: inline-block;                /* box wraps tightly around text */
-    margin-top: 1rem;                     /* spacing below heading */
+    margin-top: 2rem;                     /* spacing below heading */
     text-align: center;
 }
 
@@ -396,7 +396,7 @@ footer .socialmedia a img:hover {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     display: inline-block;                /* box wraps tightly around text */
-    margin-top: 1rem;                     /* spacing below heading */
+    margin-top: 2rem;                     /* spacing below heading */
     text-align: center;
 }
 
