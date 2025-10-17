@@ -607,21 +607,26 @@ footer .socialmedia a img:hover {
     background-color: #c03600;
 }
 
-.newsletter-container h2 {
-    background-color: #0076e5; /* your rafting orange theme color */
+.home-main .newsletter h2 {
+    background-color: #004e89; /* main inner blue circle */
     color: white;
-    font-size: 1.8rem;
     font-weight: 700;
+    font-size: 1.8rem;
     text-align: center;
-    border-radius: 50%; /* makes it a circle */
+    border-radius: 50%;
     width: 220px;
     height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px auto; /* center horizontally + space below */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 0 auto 20px auto;
     padding: 20px;
+
+    /* triple layer outline using box-shadow */
+    box-shadow:
+        0 0 0 6px #ffffff,   /* white outline */
+        0 0 0 10px #004e89,  /* outer blue outline */
+        0 4px 10px rgba(0, 0, 0, 0.25); /* subtle shadow */
 }
 
 /* Arrange form labels and inputs side by side */
