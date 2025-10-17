@@ -1,40 +1,18 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about our thrilling white water rafting adventures and company history.">
-    <meta name="author" content="Daniel Adu">
-    <title>About Us – McDan White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
-
-<body>
-    <!-- Header -->
-    <header>
-        <img src="images/logo2.png" alt="WWR Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <div class="hero">
-            <img src="images/home_hero.jpg" alt="Exciting white water rafting adventure" class="hero-image">
-            <div class="hero-text">
-                <h1>Your Next Adventure Starts Here!</h1>
-                <p>Join us for unforgettable river adventures for all skill levels.</p>
-                <a href="trips.html" class="cta-button">Explore Trips</a>
-            </div>
+<main class="home-main">
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="images/home_hero.jpg" alt="Exciting white water rafting adventure" class="hero-image">
+        <div class="hero-text">
+            <h1>McDan White Water Rafting</h1> <!-- Company name -->
+            <h2>Your Next Adventure Starts Here!</h2> <!-- Subheading -->
+            <p>Join us for unforgettable river adventures for all skill levels.</p>
+            <a href="trips.html" class="cta-button">Explore Trips</a>
         </div>
+    </div>
 
-        <!-- Newsletter Section -->
-        <section class="newsletter">
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
             <h2>Join Our Adventure Newsletter</h2>
             <form action="#" method="post">
                 <label for="name">Name:</label>
@@ -45,45 +23,28 @@
 
                 <button type="submit">Sign Up</button>
             </form>
-        </section>
+        </div>
+    </section>
 
-        <!-- Grid Section: Company Purpose / Offerings -->
-        <section class="offerings">
-            <h2>What We Offer</h2>
-            <div class="offerings-grid">
-                <div class="grid-item">
-                    <img src="images/adventures.jpg" alt="Thrilling rafting adventure">
-                    <h3>Thrilling Adventures</h3>
-                    <p>From calm scenic floats to adrenaline-pumping rapids, we have trips for everyone.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/expert_guides.jpg" alt="Certified rafting guides">
-                    <h3>Expert Guides</h3>
-                    <p>Our certified guides ensure safety and fun on every trip.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/nature.jpg" alt="Beautiful river scenery">
-                    <h3>Connect with Nature</h3>
-                    <p>Immerse yourself in nature and create memories that last a lifetime.</p>
-                </div>
+    <!-- Grid Section: Company Purpose / Offerings -->
+    <section class="offerings">
+        <h2>What We Offer</h2>
+        <div class="offerings-grid">
+            <div class="grid-item">
+                <img src="images/adventures.jpg" alt="Thrilling rafting adventure">
+                <h3>Thrilling Adventures</h3>
+                <p>From calm scenic floats to adrenaline-pumping rapids, we have trips for everyone.</p>
             </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 McDan White Water Rafting - Daniel Adu</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook_icon.png" alt="Facebook - McDan Rafting">
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/x_icon.png" alt="X/Twitter - McDan Rafting">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram_icon.jpg" alt="Instagram - McDan Rafting">
-            </a>
-        </nav>
-    </footer>
-</body>
-
-</html>
+            <div class="grid-item">
+                <img src="images/expert_guides.jpg" alt="Certified rafting guides">
+                <h3>Expert Guides</h3>
+                <p>Our certified guides ensure safety and fun on every trip.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/nature.jpg" alt="Beautiful river scenery">
+                <h3>Connect with Nature</h3>
+                <p>Immerse yourself in nature and create memories that last a lifetime.</p>
+            </div>
+        </div>
+    </section>
+</main>
