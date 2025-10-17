@@ -587,11 +587,11 @@ footer .socialmedia a img:hover {
    (Encourages users to visit the Trips page)
    ================================ */
 .home-main .cta {
-    background-color: #004e89;
+    background-color: #e20053;
     color: white;
     text-align: center;
     padding: 2rem 1rem;
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
 
 /* CTA heading */
