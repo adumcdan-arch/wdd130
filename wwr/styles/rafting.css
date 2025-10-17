@@ -407,6 +407,16 @@ footer .socialmedia a img:hover {
     text-align: center;
 }
 
+.hero-text p {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black box */
+    color: #fff; /* keep text readable */
+    font-weight: 700; /* bolder text */
+    padding: 10px 18px; /* spacing inside the box */
+    border-radius: 6px; /* soft rounded edges */
+    display: inline-block; /* fits box tightly around text */
+    margin-top: 10px;
+}
+
 .hero-text .cta-button {
     position: relative;
     z-index: 2;
