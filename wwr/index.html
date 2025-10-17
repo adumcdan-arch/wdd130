@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rafting Adventures | Home</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <!-- Header -->
     <header class="content-section">
         <div class="logo">
-            <img src="images/logo2.png" alt="Rafting Adventures Logo">
+            <img src="images/logo2.png" alt="Rafting Adventures Logo" />
         </div>
         <nav>
             <ul>
@@ -26,42 +26,45 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="content-section">
-        <h1>Explore Our Trips</h1>
-        <p>Join us for thrilling white water adventures for every skill level.</p>
-        <a href="trips.html" class="btn">See Trips</a>
-        <img src="images/home_hero.jpg" alt="Rafting Adventure" class="main-image">
+    <section class="hero">
+        <img src="images/home_hero.jpg" alt="Rafting Adventure" class="main-image" />
+        <h1>Thrill Meets Nature</h1>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready for Adventure?</h2>
+        <p>Explore our exciting trips and book your next rafting experience today!</p>
+        <a href="trips.html" class="btn">Explore Trips</a>
     </section>
 
     <!-- Newsletter Section -->
     <section class="form-section">
         <h2>Sign Up for Our Newsletter</h2>
         <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
             <button type="submit" class="btn">Subscribe</button>
         </form>
     </section>
 
-    <!-- Offerings Section -->
+    <!-- Offerings Section with Grid Layout -->
     <section class="content-section">
         <h2>Our Adventures</h2>
-
-        <!-- Tab/Palette Section -->
-        <div class="palette-tabs">
-            <div class="tab">
+        <div class="grid-layout">
+            <div class="grid-item">
+                <img src="images/trip_description.jpg" alt="Trip Description" />
                 <h3>Trip Description</h3>
-                <img src="images/trip_description.jpg" alt="Trip Description">
                 <p>Discover thrilling white water rafting adventures for all skill levels.</p>
             </div>
-            <div class="tab">
+            <div class="grid-item">
+                <img src="images/safety.jpg" alt="Safety First" />
                 <h3>Safety</h3>
-                <img src="images/safety.jpg" alt="Safety First">
                 <p>Safety is our top priority. Our guides ensure secure and fun experiences.</p>
             </div>
-            <div class="tab">
+            <div class="grid-item">
+                <img src="images/guides.jpg" alt="Expert Guides" />
                 <h3>Guides</h3>
-                <img src="images/guides.jpg" alt="Expert Guides">
                 <p>Meet our experienced rafting guides who make every adventure unforgettable.</p>
             </div>
         </div>
@@ -71,12 +74,10 @@
     <footer class="content-section">
         <p>© 2025 Rafting Adventures | All Rights Reserved</p>
         <div class="social">
-            <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram_icon.jpg" alt="Instagram"></a>
-            <a href="#"><img src="images/x_icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/facebook_icon.png" alt="Facebook" /></a>
+            <a href="#"><img src="images/instagram_icon.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/x_icon.png" alt="Twitter" /></a>
         </div>
     </footer>
 
 </body>
-
-</html>
