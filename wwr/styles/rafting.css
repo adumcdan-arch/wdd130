@@ -713,14 +713,14 @@ form {
 }
 
 /* each box for image and caption */
-ome-main .offerings-grid figure {
-    background-color: #ffffff;        /* white background */
-    border-radius: 0.25rem;           /* very slight rounding, almost rectangle */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow like Trips page */
+.home-main .offerings-grid figure {
+    background-color: #ffffff;             /* white background */
+    border-radius: 0.25rem;                /* slight rounding */
+    border: 2px solid #ffffff;             /* thin white border like Trips page */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .home-main .offerings-grid figure:hover {
     transform: scale(1.02);           /* keep slight hover zoom */
 }
