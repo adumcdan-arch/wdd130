@@ -576,87 +576,58 @@ footer .socialmedia a img:hover {
     background-color: #ffd166;
 }
 
-
-
-/* ================================
-   WHAT WE OFFER SECTION
-   (Tabs with text & images about offerings)
-   ================================ */
+/* ==========================================
+   OFFERINGS SECTION (Three image panels)
+   ========================================== */
 .home-main .offerings {
     background-color: #f9fcff;
+    color: #004e89;
     padding: 2rem 1rem 3rem;
     border-radius: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
-/* Section heading: "What We Offer" */
 .home-main .offerings h2 {
-    text-align: center;
-    color: #000000;
     font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Tab buttons row */
-.home-main .tabs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-/* Individual tab button */
-.home-main .tab-button {
-    background-color: #004e89;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-/* Hover & Active tab styles */
-.home-main .tab-button:hover,
-.home-main .tab-button.active {
-    background-color: #0077cc;
-}
-
-/* Tab content container */
-.home-main .tab-content {
-    display: none;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Active tab is shown */
-.home-main .tab-content.active {
-    display: block;
-}
-
-/* Tab content image */
-.home-main .tab-content img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 1rem;
     margin-bottom: 1rem;
 }
 
-/* Tab content paragraph */
-.home-main .tab-content p {
-    color: #0077cc;
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-top: 0.5rem;
+/* grid container for 3 offerings */
+.home-main .offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* each box for image and caption */
+.home-main .offerings-grid figure {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.home-main .offerings-grid figure:hover {
+    transform: scale(1.03);
+}
+
+/* image styling */
+.home-main .offerings-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* caption text */
+.home-main .offerings-grid figcaption {
+    padding: 1rem;
+    font-weight: 600;
+    color: #004e89;
 }
 
 
