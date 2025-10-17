@@ -299,9 +299,16 @@ footer .socialmedia a img:hover {
 .newsletter-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;              /* tighter spacing */
     margin-top: 10px;
-    white-space: nowrap; /* prevents wrapping */
+    white-space: normal;   /* allow wrapping if text is long */
+}
+
+.newsletter-container label {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 .newsletter-container input[type="checkbox"] {
