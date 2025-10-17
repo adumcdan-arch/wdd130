@@ -489,3 +489,42 @@ footer .socialmedia a img:hover {
     font-weight: 500; /* medium */
     color: #333;
 }
+.home-main .hero {
+    position: relative;
+    background-color: #f0f8ff; /* Light background for contrast */
+    padding: 4rem 2rem; /* Ample padding for spaciousness */
+    text-align: center;
+}
+
+.home-main .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 2rem; /* Space between image and text */
+}
+
+.home-main .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-main .cta-button:hover {
+    background-color: #005fa3; /* Darker shade on hover */
+}
+.home-main .hero-text h1 {
+    font-size: 3.5rem; /* Larger size for prominence */
+    font-weight: 800;  /* Extra bold for emphasis */
+    color: #004d7a;    /* Deep blue for a strong visual impact */
+    text-transform: uppercase; /* Adds a sense of importance */
+    letter-spacing: 2px; /* Slightly increased letter spacing */
+    margin-bottom: 1.5rem; /* Adjusted spacing for balance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
