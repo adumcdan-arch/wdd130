@@ -622,6 +622,18 @@ form {
     margin-bottom: 1rem;
 }
 
+.home-main .cta-button {
+    display: inline-block;
+    background-color: #cf2600; /* dark orange/red */
+    color: #ffffff;            /* white text */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
 /* CTA button link */
 .home-main .cta a {
     display: inline-block;
@@ -635,8 +647,9 @@ form {
 }
 
 /* CTA hover effect */
-.home-main .cta a:hover {
-    background-color: #ffd166;
+.home-main .cta-button:hover {
+    background-color: #e33a1a; /* slightly lighter orange on hover */
+    transform: translateY(-2px);
 }
 
 /* ==========================================
