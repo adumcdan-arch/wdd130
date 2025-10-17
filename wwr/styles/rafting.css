@@ -722,7 +722,7 @@ form {
     background-color: #ffffff;             /* white background */
     border-radius: 0.25rem;                /* slight rounding */
     border: 2px solid #ffffff;             /* thin white border like Trips page */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1); /* subtle shadow */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
