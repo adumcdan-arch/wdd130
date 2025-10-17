@@ -377,7 +377,7 @@ footer .socialmedia a img:hover {
     position: relative;
     z-index: 2; /* ensures paragraph sits above overlay */
     background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
-    color: #ff6f00;                       /* dark orange text */
+    color: #ffffff;                       /* dark orange text */
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
