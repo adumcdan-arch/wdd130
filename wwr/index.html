@@ -22,12 +22,13 @@
         </nav>
     </header>
 
-    <main>
+    <main class="home-main">
         <!-- Hero Section -->
         <div class="hero">
             <img src="images/home_hero.jpg" alt="Exciting white water rafting adventure" class="hero-image">
             <div class="hero-text">
-                <h1>Your Next Adventure Starts Here!</h1>
+                <h1>McDan White Water Rafting</h1> <!-- Company name -->
+                <h2>Your Next Adventure Starts Here!</h2> <!-- Subheading -->
                 <p>Join us for unforgettable river adventures for all skill levels.</p>
                 <a href="trips.html" class="cta-button">Explore Trips</a>
             </div>
@@ -35,40 +36,46 @@
 
         <!-- Newsletter Section -->
         <section class="newsletter">
-            <h2>Join Our Adventure Newsletter</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="newsletter-container">
+                <h2>Join Our Adventure Newsletter</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                <button type="submit">Sign Up</button>
-            </form>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
         </section>
 
-        <!-- Grid Section: Company Purpose / Offerings -->
-        <section class="offerings">
+        <!-- Tabbed Offerings Section -->
+        <section class="offerings-tabs">
             <h2>What We Offer</h2>
-            <div class="offerings-grid">
-                <div class="grid-item">
-                    <img src="images/adventures.jpg" alt="Thrilling rafting adventure">
-                    <h3>Thrilling Adventures</h3>
-                    <p>From calm scenic floats to adrenaline-pumping rapids, we have trips for everyone.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/expert_guides.jpg" alt="Certified rafting guides">
-                    <h3>Expert Guides</h3>
-                    <p>Our certified guides ensure safety and fun on every trip.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/nature.jpg" alt="Beautiful river scenery">
-                    <h3>Connect with Nature</h3>
-                    <p>Immerse yourself in nature and create memories that last a lifetime.</p>
-                </div>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="adventures">Thrilling Adventures</button>
+                <button class="tab-button" data-tab="guides">Expert Guides</button>
+                <button class="tab-button" data-tab="nature">Connect with Nature</button>
+            </div>
+
+            <div class="tab-content active" id="adventures">
+                <img src="images/adventures.jpg" alt="Thrilling rafting adventure">
+                <p>From calm scenic floats to adrenaline-pumping rapids, we have trips for everyone.</p>
+            </div>
+
+            <div class="tab-content" id="guides">
+                <img src="images/expert_guides.jpg" alt="Certified rafting guides">
+                <p>Our certified guides ensure safety and fun on every trip.</p>
+            </div>
+
+            <div class="tab-content" id="nature">
+                <img src="images/nature.jpg" alt="Beautiful river scenery">
+                <p>Immerse yourself in nature and create memories that last a lifetime.</p>
             </div>
         </section>
     </main>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 McDan White Water Rafting - Daniel Adu</p>
