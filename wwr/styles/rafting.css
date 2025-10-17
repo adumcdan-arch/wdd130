@@ -376,6 +376,15 @@ footer .socialmedia a img:hover {
 .hero-text p {
     position: relative;
     z-index: 2; /* ensures paragraph sits above overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    color: #ff6f00;                       /* dark orange text */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;                /* box wraps tightly around text */
+    margin-top: 1rem;                     /* spacing below heading */
+    text-align: center;
 }
 
 /* Paragraph under hero heading in a black box */
