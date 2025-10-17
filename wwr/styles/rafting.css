@@ -622,23 +622,23 @@ form {
     margin-bottom: 1rem;
 }
 
-/* CTA button link */
-.home-main .cta a {
+/* Home page hero CTA button - matches Trips page Book Your Adventure */
+.home-main .cta-button {
     display: inline-block;
-    background-color: #ffb703;
-    color: #000;
-    font-weight: 700;
+    background-color: #cf2600;  /* dark orange/red like Trips button */
+    color: #ffffff;             /* white text */
+    font-weight: bold;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    transition: 0.3s ease;
+    font-size: 1.1rem;          /* same size as Trips page button */
+    padding: 0.85rem 1.75rem;   /* same padding as Trips page button */
+    border-radius: 6px;         /* rounded corners like Trips button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* CTA hover effect */
-.home-main .cta a:hover {
-    background-color: #ffd166;
+.home-main .cta-button:hover {
+    background-color: #e33a1a; /* slightly lighter on hover */
+    transform: translateY(-2px); /* subtle lift effect */
 }
-
 /* ==========================================
    OFFERINGS SECTION (Three image panels)
    ========================================== */
