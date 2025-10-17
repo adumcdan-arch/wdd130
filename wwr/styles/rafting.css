@@ -276,32 +276,32 @@ footer .socialmedia a img:hover {
 
 /* --- FIX START --- */
 /* Align radio buttons neatly with their labels — keep text on one line */
+/* Radio buttons */
 .radio-group {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: center;  /* vertically center input & label */
+    gap: 4px;             /* small space between button and text */
     margin-bottom: 8px;
-    white-space: nowrap; /* prevents text from breaking into multiple lines */
 }
 
 .radio-group input[type="radio"] {
-    margin: 0;
+    margin: 0;            /* remove default spacing */
     accent-color: var(--primary-color);
 }
 
 .radio-group label {
     font-weight: normal;
     cursor: pointer;
-    white-space: nowrap; /* ensures each label stays on one line */
+    white-space: nowrap;  /* prevent label text from breaking */
 }
 
 /* Align newsletter checkbox with label — keep text on one line */
 .newsletter-container {
     display: flex;
     align-items: center;
-    gap: 6px;              /* tighter spacing */
+    gap: 4px;             /* reduce space between checkbox & label */
     margin-top: 10px;
-    white-space: normal;   /* allow wrapping if text is long */
+    white-space: nowrap;
 }
 
 .newsletter-container label {
