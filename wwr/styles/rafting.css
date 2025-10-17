@@ -580,7 +580,29 @@ footer .socialmedia a img:hover {
     background-color: #c03600;
 }
 
+/* Arrange form labels and inputs side by side */
+form label {
+    display: inline-block;
+    width: 100px; /* space for label text */
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+}
 
+form input {
+    display: inline-block;
+    width: 250px; /* width of input box */
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Optional: center the whole form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
 
 /* ================================
    CALL TO ACTION SECTION
