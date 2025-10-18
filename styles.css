@@ -34,18 +34,20 @@ main {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Align content to the left */
 }
 
 main h1 {
   color: #002e5d;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 main img {
   width: 150px;
   height: auto;
   margin-bottom: 15px;
+  display: block;
 }
 
 /* Aside section */
