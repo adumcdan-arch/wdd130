@@ -279,12 +279,6 @@ footer .socialmedia a img:hover {
 /* --- FIX START --- */
 /* Align radio buttons neatly with their labels — keep text on one line */
 /* Radio buttons */
-.radio-group {
-    display: flex;
-    align-items: center;
-    gap: 4px;          /* small space between button & label */
-    margin-bottom: 8px;
-}
 
 .radio-group input[type="radio"] {
     margin: 0;
@@ -293,9 +287,19 @@ footer .socialmedia a img:hover {
 
 
 .radio-group label {
+    display: inline-block;  /* treat label as block for alignment */
+    width: 100px;           /* same width as Name/Email labels */
+    text-align: right;      /* aligns text to the right inside the label box */
     font-weight: normal;
     cursor: pointer;
-    white-space: nowrap;
+    white-space: nowrap;    /* keep the text on one line */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;               /* space between radio button and label */
+    margin-bottom: 8px;     /* space between radio groups */
 }
 
 /* Newsletter checkbox */
@@ -641,7 +645,7 @@ footer .socialmedia a img:hover {
     width: 100px;           /* fixed space for alignment */
     font-weight: bold;      /* makes the text bold */
     margin-right: 10px;     /* space between label and input */
-    text-align: right;      /* aligns text to the right inside the label box */
+    text-align: center;      /* aligns text to the right inside the label box */
 }
 
 /* Arrange form labels and inputs side by side */
