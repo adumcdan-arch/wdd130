@@ -353,6 +353,29 @@ footer .socialmedia a img:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* =========================
+   Tighten Radio Buttons & Checkbox Labels
+========================= */
+.contact-page .radio-group,
+.contact-page .newsletter-container {
+    display: flex;             /* keep input and label on one line */
+    align-items: center;       /* vertical align middle */
+    gap: 4px;                  /* small gap between input and text */
+}
+
+.contact-page .radio-group input[type="radio"],
+.contact-page .newsletter-container input[type="checkbox"] {
+    margin: 0;                 /* remove default margin */
+    accent-color: var(--primary-color);
+}
+
+.contact-page .radio-group label,
+.contact-page .newsletter-container label {
+    font-weight: normal;
+    cursor: pointer;
+    white-space: nowrap;       /* keep text on one line */
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .contact-page .contact-section {
