@@ -127,19 +127,7 @@ header nav a:hover {
     border-radius: 8px;
 }
 
-.hero-text p {
-    background-color: rgba(0, 0, 0, 0.5); /* transparent black background */
-    color: #ffffff; /* white text */
-    font-weight: 700; /* medium-bold */
-    font-size: 1.4rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    display: inline-block; /* keep background tight around text */
-    margin-top: 1rem; /* spacing below heading */
-    position: relative;
-    z-index: 2; /* keeps text above the overlay */
-    text-align: center;
-}
+
 
 /* =========================
    History Section
@@ -583,30 +571,30 @@ footer .socialmedia a img:hover {
 }
 
 /* Hero tagline (Your next adventure starts here!) */
-.hero {
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-text {
-    position: relative;
-    z-index: 2; /* ensures hero text appears above overlay */
-    text-align: center;
-    color: #fff;
+.home-main .hero p {
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .hero-text-overlay {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
-    margin-top: 1rem;
+    border-radius: 4px;
+    font-weight: 700;  /* bold text */
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 90%;
 }
 
 .hero-text-overlay p {
-    font-weight: 600; /* slightly bold */
-    margin: 0;
+    font-weight: bold; /* ensure text inside is bold */
 }
+
 /* ================================
    NEWSLETTER SIGNUP SECTION
    (Form with Name, Email, and Signup button)
