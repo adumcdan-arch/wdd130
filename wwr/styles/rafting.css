@@ -310,16 +310,16 @@ footer .socialmedia a img:hover {
 
 /* Newsletter checkbox */
 .newsletter-container {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+    display: flex;          /* puts checkbox and label on same line */
+    align-items: center;    /* vertically center them */
+    gap: 6px;               /* space between checkbox and text */
     margin-top: 10px;
 }
 
 .newsletter-container label {
-    white-space: nowrap;   /* prevents text from breaking to the next line */
-    overflow: hidden;      /* ensures long text doesn’t overflow the container */
-    text-overflow: ellipsis; /* optional: adds "..." if it overflows */
+    white-space: normal;    /* allows label text to wrap if needed */
+    cursor: pointer;
+    font-weight: normal;
 }
 
 .newsletter-container input[type="checkbox"] {
