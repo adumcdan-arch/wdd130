@@ -284,24 +284,23 @@ footer .socialmedia a img:hover {
 
 /* === Cleaned & fixed radio button styles === */
 /* Container aligns perfectly under the heading */
+
 .radio-group-container {
     display: flex;
-    flex-direction: column;
-    margin-left: 0; /* ensures it aligns with the p text */
-    padding-left: 0; /* remove any default padding */
-    gap: 8px;       /* space between each option */
+    flex-direction: column;  /* stacks vertically */
+    margin-left: 0;          /* aligns with the heading */
+    gap: 8px;                /* spacing between options */
 }
 
-/* Each radio + label row */
 .radio-group {
     display: flex;
     align-items: center;
-    gap: 5px;       /* distance between button and label */
+    gap: 5px;                /* space between button and label */
 }
 
 .radio-group input[type="radio"] {
-    margin: 0;       /* remove default browser spacing */
-    accent-color: var(--primary-color); /* optional custom color */
+    margin: 0;
+    accent-color: var(--primary-color); /* optional color */
 }
 
 .radio-group label {
