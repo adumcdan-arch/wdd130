@@ -308,10 +308,16 @@ footer .socialmedia a img:hover {
 .newsletter-container {
     display: flex;
     align-items: center;
-    gap: 4px;
-    margin-top: 10px;
+    justify-content: flex-start;
+    gap: 6px;
+    width: 100%;  /* ensures it can fit the label on one line */
 }
 
+.newsletter-container label {
+    white-space: nowrap;   /* prevents text from breaking to the next line */
+    overflow: hidden;      /* ensures long text doesn’t overflow the container */
+    text-overflow: ellipsis; /* optional: adds "..." if it overflows */
+}
 
 .newsletter-container input[type="checkbox"] {
     margin: 0;
@@ -319,10 +325,11 @@ footer .socialmedia a img:hover {
 }
 
 .newsletter-container label {
-    font-weight: normal;
-    cursor: pointer;
-    white-space: normal;
+    white-space: nowrap;   /* prevents text from breaking to the next line */
+    overflow: hidden;      /* ensures long text doesn’t overflow the container */
+    text-overflow: ellipsis; /* optional: adds "..." if it overflows */
 }
+
 
 /* --- FIX END --- */
 
