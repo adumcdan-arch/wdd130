@@ -448,6 +448,22 @@ footer .socialmedia a img:hover {
     z-index: 2;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center everything horizontally */
+    text-align: center;
+}
+
+.hero-text .join-us {
+    font-weight: bold;      /* make it stand out a bit */
+    margin: 1rem 0;         /* space between heading and this text */
+}
+
+.hero-text .cta-button {
+    margin-top: 1.5rem;    /* space between this text and the button */
+}
+
     .history-content {
         flex-direction: column;
         align-items: center;
