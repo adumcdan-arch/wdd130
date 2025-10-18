@@ -207,22 +207,52 @@ footer .socialmedia a img:hover {
 }
 
 /* =========================
-   Contact Page Styles
+   Contact Page CSS
+   (isolated for contact.html only)
 ========================= */
-.contact-section {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: flex-start;  /* align form to the left */
-    margin: 20px;             /* spacing around the section */
+
+/* -------------------------
+   Contact Page Layout
+------------------------- */
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: var(--body-font);
+    color: var(--text-color);
 }
 
-.map-container {
+/* Company Info Section */
+.contact-page .company-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.contact-page .company-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-page .company-info p {
+    margin: 0.25rem 0;
+}
+
+/* Contact Section: Map + Form */
+.contact-page .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Map Container */
+.contact-page .map-container {
     flex: 1;
     min-width: 300px;
 }
 
-.map-container iframe {
+.contact-page .map-container iframe {
     width: 100%;
     height: 400px;
     border: 0;
@@ -230,136 +260,92 @@ footer .socialmedia a img:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.company-info {
-    text-align: center;
-    margin: 20px 0;
-    display: block;
-    width: 100%;
-    line-height: 1.3;
-    color: var(--text-color);
-}
-
-.contact-form {
+/* Contact Form */
+.contact-page .contact-form {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 0;   /* remove extra left/right shift */
+    margin: 0;
+    align-items: stretch;  /* ensures inputs, radios, checkbox fill width */
 }
 
-.contact-form label {
+.contact-page .contact-form label {
     font-weight: bold;
 }
 
-.input-group {
+/* Input Groups */
+.contact-page .input-group {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.contact-page .contact-form input[type="text"],
+.contact-page .contact-form input[type="email"],
+.contact-page .contact-form textarea {
+    width: 100%;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    font-family: var(--body-font);
-    width: 100%;
-    color: var(--text-color);
     background-color: #f9f9f9;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
 }
 
-.contact-form textarea {
+.contact-page .contact-form textarea {
     height: 100px;
     resize: vertical;
 }
 
-/* --- FIX START --- */
-/* Align radio buttons neatly with their labels — keep text on one line */
-/* Radio buttons */
-
-/* === Cleaned & fixed radio button styles === */
-.radio-group {
+/* Radio Buttons */
+.contact-page .radio-group {
     display: flex;
-    align-items: center;   /* keep radio + label aligned */
-    gap: 8px;              /* small gap between button and label */
-    margin-bottom: 10px;   /* spacing between each group */
-    margin-left: 0;        /* reset any unwanted shifting */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0;
 }
 
-.radio-group input[type="radio"] {
+.contact-page .radio-group input[type="radio"] {
     margin: 0;
+    flex-shrink: 0;
     accent-color: var(--primary-color);
 }
 
-.radio-group label {
-    font-weight: normal;
-    white-space: nowrap;   /* keep text on one line */
+.contact-page .radio-group label {
+    margin: 0;
+    white-space: nowrap;
     cursor: pointer;
+    font-weight: normal;
 }
 
-.contact-form {
-    align-items: flex-start;
-}
-
-/* Newsletter checkbox */
-.newsletter-container {
+/* Newsletter Checkbox */
+.contact-page .newsletter-container {
     display: flex;
     align-items: center;
-    gap: 4px;
+    justify-content: flex-start;
+    gap: 6px;
     margin-top: 10px;
 }
 
-/* ===== Fix radio & checkbox alignment ===== */
-.contact-form p {
-    margin: 0 0 5px 0;        /* remove extra spacing above radio group */
-    padding: 0;
-    font-weight: bold;
-    text-align: left;
-}
-
-.radio-group,
-.newsletter-container {
-    display: flex;
-    align-items: center;      /* vertically center label with input */
-    justify-content: flex-start; /* align everything to the left */
-    gap: 8px;                 /* spacing between input and label */
-    margin: 0 0 10px 0;       /* remove extra indentation */
-    width: 100%;              /* full width of form column */
-}
-
-.radio-group input[type="radio"],
-.newsletter-container input[type="checkbox"] {
-    margin: 0;                /* remove default spacing */
-    accent-color: var(--accent1-color);
-}
-
-.contact-form {
-    align-items: stretch;     /* ensure all input groups take full width */
-}
-
-.contact-form .input-group,
-.radio-group,
-.newsletter-container {
-    width: 100%;  /* full width */
-}
-
-.newsletter-container input[type="checkbox"] {
+.contact-page .newsletter-container input[type="checkbox"] {
     margin: 0;
+    flex-shrink: 0;
     accent-color: var(--accent1-color);
 }
 
-.newsletter-container label {
+.contact-page .newsletter-container label {
     font-weight: normal;
     cursor: pointer;
     white-space: normal;
 }
 
-/* --- FIX END --- */
-
-.contact-form input[type="submit"] {
+/* Submit Button */
+.contact-page .contact-form input[type="submit"] {
     background-color: var(--accent1-color);
     color: #fff;
     border: none;
@@ -370,25 +356,35 @@ footer .socialmedia a img:hover {
     transition: background-color 0.3s ease;
 }
 
-.contact-form input[type="submit"]:hover {
+.contact-page .contact-form input[type="submit"]:hover {
     background-color: #cf2600;
 }
 
-.team-profiles {
+/* Team Profiles Section */
+.contact-page .team {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-page .team h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.contact-page .team-profiles {
     display: flex;
     gap: 2rem;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px;
+    justify-content: center;
 }
 
-.team-profiles figure {
+.contact-page .team-profiles figure {
+    flex: 1 1 200px;
     text-align: center;
-    flex: 1;
-    min-width: 200px;
 }
 
-.team-profiles img {
+.contact-page .team-profiles img {
     width: 200px;
     height: auto;
     border-radius: 8px;
@@ -399,116 +395,25 @@ footer .socialmedia a img:hover {
    Responsive Adjustments
 ========================= */
 @media (max-width: 900px) {
-    .hero article {
-        width: 80%;
-    }
-
-    .hero article img {
-        width: 90px;
-        margin-left: 8px;
-    }
-
-    /* === NEW HERO TEXT STYLES === */
-.hero-text h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    display: inline-block;
-    background-color: rgba(0,0,0,0.7);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    color: #ffffff;
-    text-align: center;
-}
-
-.hero-text p {
-    position: relative;
-    z-index: 2; /* ensures paragraph sits above overlay */
-    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
-    color: #ffffff;                       /* dark orange text */
-    font-weight: 900;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    display: inline-block;                /* box wraps tightly around text */
-    margin-top: 2rem;                     /* spacing below heading */
-    text-align: center;
-}
-
-/* Paragraph under hero heading in a black box */
-.hero-paragraph {
-    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
-    color: #ffffff;                       /* dark orange text */
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    display: inline-block;                /* box wraps tightly around text */
-    margin-top: 2rem;                     /* spacing below heading */
-    text-align: center;
-}
-
-.hero-text p {
-    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black box */
-    color: #fff; /* keep text readable */
-    font-weight: 700; /* bolder text */
-    padding: 10px 18px; /* spacing inside the box */
-    border-radius: 6px; /* soft rounded edges */
-    display: inline-block; /* fits box tightly around text */
-    margin-top: 10px;
-}
-
-.hero-text .cta-button {
-    position: relative;
-    z-index: 2;
-}
-
-    .history-content {
+    .contact-page .contact-section {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
 
-    .history-content img {
-        width: 80%;
-    }
-
-    .adventure-grid figure {
-        flex: 1 1 45%;
-        margin-bottom: 10px;
-    }
-
-    .contact-section {
-        flex-direction: column;
+    .contact-page .map-container iframe {
+        height: 300px;
     }
 }
 
 @media (max-width: 600px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    header nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .adventure-grid figure {
-        flex: 1 1 100%;
-    }
-
-    .team-profiles {
+    .contact-page .team-profiles {
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-page .map-container,
+    .contact-page .contact-form {
+        min-width: 100%;
     }
 }
 
