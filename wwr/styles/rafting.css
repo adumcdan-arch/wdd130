@@ -1011,3 +1011,13 @@ form {
         font-size: 0.9rem;
     }
 }
+
+.trip-table table th,
+.trip-table table td {
+    border-right: 1px solid #ccc; /* thin vertical line */
+}
+
+.trip-table table th:last-child,
+.trip-table table td:last-child {
+    border-right: none; /* no extra line on the last column */
+}
