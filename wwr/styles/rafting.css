@@ -285,23 +285,21 @@ footer .socialmedia a img:hover {
 /* === Cleaned & fixed radio button styles === */
 .radio-group {
     display: flex;
-    align-items: center;   /* keep radio + label aligned */
-    gap: 8px;              /* small gap between button and label */
-    margin-bottom: 10px;   /* spacing between each group */
-    margin-left: 0;        /* reset any unwanted shifting */
+    align-items: center;   /* vertically center button and label */
+    gap: 6px;              /* small space between radio and label */
+    margin-bottom: 10px;   /* spacing between each option */
 }
 
 .radio-group input[type="radio"] {
-    margin: 0;
+    margin: 0;             /* remove default browser spacing */
     accent-color: var(--primary-color);
 }
 
 .radio-group label {
     font-weight: normal;
-    white-space: nowrap;   /* keep text on one line */
+    white-space: nowrap;   /* keep label on one line */
     cursor: pointer;
 }
-
 .contact-form {
     align-items: flex-start;
 }
