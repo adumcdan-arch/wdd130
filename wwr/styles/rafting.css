@@ -621,6 +621,10 @@ footer .socialmedia a img:hover {
     justify-content: center;
     margin: 0 auto 20px auto;
     padding: 20px;
+    white-space: normal;       /* allow line breaks */
+    line-height: 1.2;          /* spacing between the two lines */
+    padding: 20px;             /* maintain circle size */
+    
 
     /* triple layer outline using box-shadow */
     box-shadow:
