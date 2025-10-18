@@ -283,30 +283,30 @@ footer .socialmedia a img:hover {
 /* Radio buttons */
 
 /* === Cleaned & fixed radio button styles === */
+/* Container aligns perfectly under the heading */
 .radio-group-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-left: 0; /* ensures it aligns with the p text */
+    padding-left: 0; /* remove any default padding */
+    gap: 8px;       /* space between each option */
 }
 
+/* Each radio + label row */
 .radio-group {
     display: flex;
     align-items: center;
-    gap: 6px; /* space between radio and label */
+    gap: 5px;       /* distance between button and label */
 }
 
 .radio-group input[type="radio"] {
-    margin: 0;  /* removes default spacing */
+    margin: 0;       /* remove default browser spacing */
     accent-color: var(--primary-color); /* optional custom color */
 }
 
 .radio-group label {
     font-weight: normal;
     cursor: pointer;
-}
-
-.contact-form {
-    align-items: flex-start;
 }
 
 /* Newsletter checkbox */
