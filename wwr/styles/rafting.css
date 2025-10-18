@@ -213,7 +213,8 @@ footer .socialmedia a img:hover {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-    margin: 20px;
+    align-items: flex-start;  /* align form to the left */
+    margin: 20px;             /* spacing around the section */
 }
 
 .map-container {
@@ -245,6 +246,7 @@ footer .socialmedia a img:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin: 0;   /* remove extra left/right shift */
 }
 
 .contact-form label {
@@ -279,42 +281,43 @@ footer .socialmedia a img:hover {
 /* Radio buttons */
 .radio-group {
     display: flex;
-    align-items: center;  /* vertically center input & label */
-    gap: 4px;             /* small space between button and text */
+    align-items: center;
+    gap: 4px;          /* small space between button & label */
     margin-bottom: 8px;
 }
 
 .radio-group input[type="radio"] {
-    margin: 0;            /* remove default spacing */
+    margin: 0;
     accent-color: var(--primary-color);
 }
+
 
 .radio-group label {
     font-weight: normal;
     cursor: pointer;
-    white-space: nowrap;  /* prevent label text from breaking */
-}
-
-/* Align newsletter checkbox with label — keep text on one line */
-.newsletter-container {
-    display: flex;
-    align-items: center;
-    gap: 4px;             /* reduce space between checkbox & label */
-    margin-top: 10px;
     white-space: nowrap;
 }
 
-.newsletter-container label {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    cursor: pointer;
+/* Newsletter checkbox */
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
 }
+
 
 .newsletter-container input[type="checkbox"] {
     margin: 0;
     accent-color: var(--accent1-color);
 }
+
+.newsletter-container label {
+    font-weight: normal;
+    cursor: pointer;
+    white-space: normal;
+}
+
 /* --- FIX END --- */
 
 .contact-form input[type="submit"] {
