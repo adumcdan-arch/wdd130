@@ -874,14 +874,13 @@ form {
    Trips Page CSS
 ========================= */
 
-/* Hero Section */
 .trips-hero {
     position: relative;
-    width: 100%;        /* use 100% of parent/container width */
-    max-width: 100%;    /* ensure it doesn’t exceed page */
-    height: 450px;      /* desired hero height */
-    margin: 0;          /* remove default margins */
-    padding: 0;         /* remove padding */
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -890,39 +889,45 @@ form {
     align-items: center;
     text-align: center;
     color: #ffffff;
+    overflow: hidden;
 }
 
 .trips-hero::after {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* overlay for readability */
-    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0; /* put overlay BEHIND text now */
+}
+
+.trips-hero h1,
+.trips-hero p {
+    position: relative;
+    z-index: 2; /* keep text above overlay */
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7); /* dark box directly under text */
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
 }
 
 .trips-hero h1 {
     font-size: 2.5rem;
-    z-index: 2;
-    margin-bottom: 1rem;
     font-weight: 900;
-    line-height: 1.2;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-.trips-hero h1 {
-    font-size: 2.5rem;
-    z-index: 2;
-    margin-bottom: 1rem;
-    font-weight: 900;
-    line-height: 1.2;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+.trips-hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
-
 
 .trips-hero .cta-button {
+    position: relative;
     z-index: 2;
     text-decoration: none;
     background-color: var(--accent1-color);
@@ -932,7 +937,6 @@ form {
     font-weight: bold;
     transition: 0.3s ease;
 }
-
 .trips-hero .cta-button:hover {
     background-color: #e64b39;
 }
