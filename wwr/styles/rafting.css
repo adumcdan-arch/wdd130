@@ -922,7 +922,7 @@ form {
     font-weight: 900;
     line-height: 1.2;
     color: #ffffff; /* White color */
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* Optional: subtle shadow for readability */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* dark shadow around text */
 }
 
 .trips-hero p {
@@ -930,8 +930,7 @@ form {
     z-index: 2;
     margin-bottom: 1.5rem;
     color: #ffffff; /* White text */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* dark shadow around text */
 
 .trips-hero .cta-button {
     z-index: 2;
