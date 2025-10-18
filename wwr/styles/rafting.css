@@ -919,6 +919,17 @@ form {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
+.hero-text h1,
+.hero-text p {
+    display: inline-block;             /* Wraps text tightly */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    color: #ffffff;                    /* White text for high contrast */
+    padding: 0.5rem 1rem;              /* Space around the text */
+    border-radius: 4px;                /* Rounded corners for style */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Optional extra shadow */
+    margin-bottom: 1rem;               /* Space below each box */
+}
+
 .trips-hero .cta-button {
     z-index: 2;
     text-decoration: none;
