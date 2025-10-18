@@ -907,28 +907,20 @@ form {
     margin-bottom: 1rem;
     font-weight: 900;
     line-height: 1.2;
-    color: #ffffff; /* White color */
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* Optional: subtle shadow for readability */
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-.trips-hero p {
-    font-size: 1.3rem;
+.trips-hero h1 {
+    font-size: 2.5rem;
     z-index: 2;
-    margin-bottom: 1.5rem;
-    color: #ffffff; /* White text */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-.hero-text h1,
-.hero-text p {
-    display: inline-block;             /* Wraps text tightly */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-    color: #ffffff;                    /* White text for high contrast */
-    padding: 0.5rem 1rem;              /* Space around the text */
-    border-radius: 4px;                /* Rounded corners for style */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Optional extra shadow */
-    margin-bottom: 1rem;               /* Space below each box */
-}
 
 .trips-hero .cta-button {
     z-index: 2;
