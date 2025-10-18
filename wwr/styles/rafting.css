@@ -421,7 +421,7 @@ footer .socialmedia a img:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.10); /* light overlay */
     z-index: 1;
 }
 
@@ -460,15 +460,14 @@ footer .socialmedia a img:hover {
 
 /* Hero text container with semi-transparent black overlay */
 .hero-text-box {
-    background: rgba(0, 0, 0, 0.5); /* overlay */
+   
     padding: 2rem 3rem;
     border-radius: 10px;
     display: inline-block;
     text-align: center;
     position: relative;
     z-index: 2;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* optional shadow for readability */
-}
+   
 
 /* Heading */
 .hero-text-box h1 {
