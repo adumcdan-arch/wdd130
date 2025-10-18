@@ -367,6 +367,14 @@ footer .socialmedia a img:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.team-profiles figcaption {
+    font-weight: 600; /* slightly bolder than normal, not full bold */
+    color: var(--text-color); /* keeps the text color consistent */
+    font-size: 0.95rem; /* optional: slightly smaller if needed */
+    margin-top: 8px; /* spacing from the image */
+    text-align: center;
+}
+
 /* =========================
    Responsive Adjustments
 ========================= */
