@@ -592,7 +592,7 @@ footer .socialmedia a img:hover {
 }
 
 .hero-text-overlay p {
-    font-weight: 900/* ensure text inside is bold */
+    font-weight: bold; /* ensure text inside is bold */
 }
 
 .hero-subtext {
@@ -600,7 +600,7 @@ footer .socialmedia a img:hover {
     margin-bottom: 1.5rem;
     background-color: rgba(0, 0, 0, 0.5); /* transparent black background */
     color: #fff;
-    font-weight: 600; /* slightly bold */
+    font-weight: 900; /* slightly bold */
     padding: 0.5rem 1rem;
     border-radius: 6px;
     display: inline-block;
