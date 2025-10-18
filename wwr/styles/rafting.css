@@ -127,6 +127,20 @@ header nav a:hover {
     border-radius: 8px;
 }
 
+.hero-text p {
+    background-color: rgba(0, 0, 0, 0.5); /* transparent black background */
+    color: #ffffff; /* white text */
+    font-weight: 700; /* medium-bold */
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block; /* keep background tight around text */
+    margin-top: 1rem; /* spacing below heading */
+    position: relative;
+    z-index: 2; /* keeps text above the overlay */
+    text-align: center;
+}
+
 /* =========================
    History Section
 ========================= */
