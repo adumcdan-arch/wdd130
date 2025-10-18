@@ -280,46 +280,41 @@ footer .socialmedia a img:hover {
 /* --- FIX START --- */
 /* Align radio buttons neatly with their labels — keep text on one line */
 /* Radio buttons */
-
-/* === Cleaned & fixed radio button styles === */
-/* Container aligns perfectly under the heading */
-
+/* ===============================
+   Contact Page Radio Buttons
+   =============================== */
 .radio-group-container {
-    display: flex;
-    flex-direction: column;   /* vertical stack */
-    align-items: flex-start;  /* aligns with the form fields */
-    gap: 8px;                 /* space between each option */
-    margin-left: 0;           /* remove any extra indentation */
+    display: flex;              /* arrange all options in a row */
+    gap: 20px;                  /* space between radio buttons */
+    margin-bottom: 15px;
+    flex-wrap: wrap;            /* wraps on smaller screens */
 }
 
 .radio-group {
     display: flex;
-    align-items: flex-start;
-    gap: 6px;                 /* space between radio and label */
+    align-items: center;        /* vertically center radio + label */
+    gap: 5px;                   /* small space between radio and label */
 }
 
 .radio-group input[type="radio"] {
-    margin: 0;
+    margin: 0;                  /* remove default spacing */
     accent-color: var(--primary-color);
 }
 
 .radio-group label {
-    font-weight: 600
-    cursor: pointer;
-}
-
-/* Newsletter checkbox */
-.newsletter-container {
-    display: flex;          /* puts checkbox and label on same line */
-    align-items: center;    /* vertically center them */
-    gap: 6px;               /* space between checkbox and text */
-    margin-top: 10px;
-}
-
-.newsletter-container label {
-    white-space: normal;    /* allows label text to wrap if needed */
-    cursor: pointer;
     font-weight: normal;
+    cursor: pointer;
+    white-space: nowrap;        /* prevents wrapping */
+}
+
+/* ===============================
+   Newsletter Checkbox
+   =============================== */
+.newsletter-container {
+    display: flex;              /* inline checkbox + label */
+    align-items: center;
+    gap: 8px;                   /* space between checkbox and label */
+    margin-top: 10px;
 }
 
 .newsletter-container input[type="checkbox"] {
@@ -330,7 +325,7 @@ footer .socialmedia a img:hover {
 .newsletter-container label {
     font-weight: normal;
     cursor: pointer;
-    white-space: normal;
+    white-space: nowrap;        /* keep text on one line */
 }
 
 /* --- FIX END --- */
