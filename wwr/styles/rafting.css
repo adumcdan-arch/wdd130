@@ -287,7 +287,7 @@ footer .socialmedia a img:hover {
     display: flex;
     align-items: center;   /* vertically center button and label */
     gap: 1px;              /* small space between radio and label */
-    margin-bottom: 5px;   /* spacing between each option */
+    margin-bottom: 1px;   /* spacing between each option */
 }
 
 .radio-group input[type="radio"] {
