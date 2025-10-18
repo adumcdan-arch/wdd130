@@ -242,13 +242,12 @@ footer .socialmedia a img:hover {
 }
 
 .contact-form {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 0;   /* remove extra left/right shift */
+    margin: 0 auto;      /* centers the form on the page */
+    padding: 10px;       /* adds spacing from form edges */
+    max-width: 400px;    /* keeps the form narrow */
 }
 
 .contact-form label {
@@ -287,20 +286,21 @@ footer .socialmedia a img:hover {
 
 .radio-group-container {
     display: flex;
-    flex-direction: column;  /* stacks vertically */
-    margin-left: 0;          /* aligns with the heading */
-    gap: 8px;                /* spacing between options */
+    flex-direction: column;   /* vertical stack */
+    align-items: flex-start;  /* aligns with the form fields */
+    gap: 8px;                 /* space between each option */
+    margin-left: 0;           /* remove any extra indentation */
 }
 
 .radio-group {
     display: flex;
     align-items: center;
-    gap: 5px;                /* space between button and label */
+    gap: 5px;                 /* space between radio and label */
 }
 
 .radio-group input[type="radio"] {
     margin: 0;
-    accent-color: var(--primary-color); /* optional color */
+    accent-color: var(--primary-color);
 }
 
 .radio-group label {
