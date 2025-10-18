@@ -312,6 +312,39 @@ footer .socialmedia a img:hover {
     margin-top: 10px;
 }
 
+/* ===== Fix radio & checkbox alignment ===== */
+.contact-form p {
+    margin: 0 0 5px 0;        /* remove extra spacing above radio group */
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.radio-group,
+.newsletter-container {
+    display: flex;
+    align-items: center;      /* vertically center label with input */
+    justify-content: flex-start; /* align everything to the left */
+    gap: 8px;                 /* spacing between input and label */
+    margin: 0 0 10px 0;       /* remove extra indentation */
+    width: 100%;              /* full width of form column */
+}
+
+.radio-group input[type="radio"],
+.newsletter-container input[type="checkbox"] {
+    margin: 0;                /* remove default spacing */
+    accent-color: var(--accent1-color);
+}
+
+.contact-form {
+    align-items: stretch;     /* ensure all input groups take full width */
+}
+
+.contact-form .input-group,
+.radio-group,
+.newsletter-container {
+    width: 100%;  /* full width */
+}
 
 .newsletter-container input[type="checkbox"] {
     margin: 0;
