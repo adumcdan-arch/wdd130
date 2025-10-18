@@ -460,14 +460,14 @@ footer .socialmedia a img:hover {
 
 /* Hero text container with semi-transparent black overlay */
 .hero-text-box {
-    background: rgba(24, 3, 255, 0.6); /* overlay */
+
     padding: 2rem 3rem;
     border-radius: 10px;
     display: inline-block;
     text-align: center;
     position: relative;
     z-index: 2;
-    box-shadow: 0 0 25px rgba(255, 230, 2, 0.8); /* optional shadow for readability */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8); /* optional shadow for readability */
 }
 
 /* Heading */
