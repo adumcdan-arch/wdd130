@@ -1,71 +1,54 @@
-/* HEADER */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Header and Navigation */
 header {
-  background-color: #002e5d; /* same as footer */
-  color: white;
-  padding: 8px 20px; /* slimmer header */
+  background-color: #002e5d;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header nav a {
-  color: white;
+nav a {
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
-  margin: 0 10px;
+  font-weight: bold;
 }
 
-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* HERO SECTION (main image with overlay text) */
-.hero {
-  position: relative;
-  text-align: center;
-}
-
-.hero img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.hero-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.hero-text h2 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-/* MAIN CONTENT */
+/* Main section */
 main {
   max-width: 800px;
-  margin: 0 auto;
-  flex-grow: 1;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-p {
-  padding: 0;
+main h1 {
+  color: #002e5d;
+  margin-bottom: 15px;
 }
 
-/* ASIDE */
+main img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Aside section */
 aside {
   width: 300px;
   margin: 20px auto;
@@ -73,6 +56,7 @@ aside {
   padding: 15px;
   background-color: #ffffff;
   color: #000000;
+  text-align: center;
 }
 
 aside img {
@@ -80,12 +64,17 @@ aside img {
   height: auto;
 }
 
-/* FOOTER */
+/* Paragraphs */
+p {
+  padding: 0;
+}
+
+/* Footer */
 footer {
   background-color: #002e5d;
-  color: white;
+  color: #ffffff;
   margin-top: 20px;
   border-top: 2px solid #000000;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
