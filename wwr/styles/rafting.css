@@ -566,16 +566,19 @@ footer .socialmedia a img:hover {
     font-weight: 500;
 }
 
-.highlight-overlay {
+.hero-text-overlay {
+    position: absolute;               /* place it on top of hero image */
+    bottom: 20px;                     /* adjust vertical position */
+    left: 50%;                        /* center horizontally */
+    transform: translateX(-50%);      /* exact centering */
     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-    color: #ffffff;                       /* white text */
-    text-align: center;                    /* center the text */
-    display: inline-block;                 /* box wraps tightly around text */
-    padding: 0.5rem 1rem;                 /* small padding top/bottom & sides */
-    border-radius: 4px;                    /* optional: slightly rounded edges */
-    margin: 1rem auto;                     /* spacing above/below */
-    font-size: 1.5rem;                     /* adjust text size */
-    font-weight: 700;                      /* bold text */
+    color: #ffffff;                   /* white text */
+    padding: 0.5rem 1rem;             /* small padding around text */
+    border-radius: 4px;               /* rounded edges */
+    font-weight: 700;                 /* bold text */
+    font-size: 1.5rem;                /* adjust text size */
+    text-align: center;
+    max-width: 90%;                   /* don’t overflow hero image */
 }
 
 /* ================================
