@@ -580,45 +580,52 @@ footer .socialmedia a img:hover {
     font-weight: 500;
 }
 
-.hero-text-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+
+/* Hero text container with semi-transparent black overlay */
+.hero-text-box {
+    background: rgba(0, 0, 0, 0.6); /* overlay */
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8); /* optional shadow for readability */
+}
+
+/* Heading */
+.hero-text-box h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
     color: #ffffff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-weight: 700;  /* bold text */
+}
+
+/* Tagline / Join us text */
+.hero-text-box .join-us {
+    font-weight: 600;
     font-size: 1.5rem;
-    text-align: center;
-    max-width: 90%;
+    margin-bottom: 2rem;  /* pushes the button down */
+    color: #ffffff;
+    background: none;     /* remove extra black box if not needed */
 }
 
-.hero-text-overlay p {
-    font-weight: bold; /* ensure text inside is bold */
-}
-
-.hero-subtext {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.5); /* transparent black background */
-    color: #fff;
-    font-weight: 900; /* slightly bold */
-    padding: 0.5rem 1rem;
+/* Explore Trips button */
+.hero-text-box .cta-button {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
     border-radius: 6px;
-    display: inline-block;
+    background-color: #cf2600;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.join-us {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-weight: bold;
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    border-radius: 8px;
-    margin: 1rem auto;
+.hero-text-box .cta-button:hover {
+    background-color: #e33a1a;
+    transform: translateY(-2px);
 }
 
 /* ================================
