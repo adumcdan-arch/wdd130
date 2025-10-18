@@ -304,7 +304,7 @@ footer .socialmedia a img:hover {
 }
 
 .radio-group label {
-    font-weight: normal;
+    font-weight: 600
     cursor: pointer;
 }
 
@@ -448,21 +448,7 @@ footer .socialmedia a img:hover {
     z-index: 2;
 }
 
-.hero-text {
-    display: flex;
-    flex-direction: column; /* stack items vertically */
-    align-items: center;    /* center everything horizontally */
-    text-align: center;
-}
 
-.hero-text .join-us {
-    font-weight: bold;      /* make it stand out a bit */
-    margin: 1rem 0;         /* space between heading and this text */
-}
-
-.hero-text .cta-button {
-    margin-top: 1.5rem;    /* space between this text and the button */
-}
 
     .history-content {
         flex-direction: column;
@@ -755,7 +741,7 @@ form {
     color: white;
     text-align: center;
     padding: 2rem 1rem;
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
 
 /* CTA heading */
@@ -775,7 +761,7 @@ form {
     padding: 0.85rem 1.75rem;   /* same padding as Trips page button */
     border-radius: 6px;         /* rounded corners like Trips button */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 60px;           /* added to push button down */
+    margin-top: 40px;           /* added to push button down */
 }
 
 .home-main .cta-button:hover {
