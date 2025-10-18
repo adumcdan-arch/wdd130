@@ -592,7 +592,7 @@ footer .socialmedia a img:hover {
 }
 
 .hero-text-overlay p {
-    font-weight: bold; /* ensure text inside is bold */
+    font-weight: 900/* ensure text inside is bold */
 }
 
 .hero-subtext {
