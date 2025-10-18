@@ -295,7 +295,7 @@ footer .socialmedia a img:hover {
 .radio-group {
     display: flex;
     align-items: center;
-    gap: 2px;                 /* space between radio and label */
+    gap: 6px;                 /* space between radio and label */
 }
 
 .radio-group input[type="radio"] {
