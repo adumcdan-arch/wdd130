@@ -302,6 +302,24 @@ footer .socialmedia a img:hover {
     margin-bottom: 8px;     /* space between radio groups */
 }
 
+.contact-form .radio-group {
+    display: flex;
+    align-items: center;  /* vertically centers radio & label */
+    gap: 8px;             /* space between radio & label */
+    margin-left: 110px;   /* matches the width of your input labels */
+    margin-bottom: 12px;  /* spacing below each radio */
+}
+
+.contact-form .radio-group input[type="radio"] {
+    margin: 0;            /* remove default spacing */
+}
+
+.contact-form .radio-group label {
+    font-weight: normal;
+    white-space: nowrap;  /* prevent text from wrapping */
+    cursor: pointer;
+}
+
 /* Newsletter checkbox */
 .newsletter-container {
     display: flex;
