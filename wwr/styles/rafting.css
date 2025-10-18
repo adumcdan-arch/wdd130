@@ -828,7 +828,7 @@ form {
     align-items: center;
     text-align: center;
     color: #ffffff;
-    padding: 0;
+    padding: 0 1rem;
 }
 
 .trips-hero::after {
