@@ -280,44 +280,28 @@ footer .socialmedia a img:hover {
 /* Align radio buttons neatly with their labels — keep text on one line */
 /* Radio buttons */
 
+/* === Cleaned & fixed radio button styles === */
+.radio-group {
+    display: flex;
+    align-items: center;   /* keep radio + label aligned */
+    gap: 8px;              /* small gap between button and label */
+    margin-bottom: 10px;   /* spacing between each group */
+    margin-left: 0;        /* reset any unwanted shifting */
+}
+
 .radio-group input[type="radio"] {
     margin: 0;
     accent-color: var(--primary-color);
 }
 
-
 .radio-group label {
-    display: inline-block;  /* treat label as block for alignment */
-    width: 100px;           /* same width as Name/Email labels */
-    text-align: right;      /* aligns text to the right inside the label box */
     font-weight: normal;
+    white-space: nowrap;   /* keep text on one line */
     cursor: pointer;
-    white-space: nowrap;    /* keep the text on one line */
 }
 
-.radio-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;               /* space between radio button and label */
-    margin-bottom: 8px;     /* space between radio groups */
-}
-
-.contact-form .radio-group {
-    display: flex;
-    align-items: center;  /* vertically centers radio & label */
-    gap: 8px;             /* space between radio & label */
-    margin-left: 110px;   /* matches the width of your input labels */
-    margin-bottom: 12px;  /* spacing below each radio */
-}
-
-.contact-form .radio-group input[type="radio"] {
-    margin: 0;            /* remove default spacing */
-}
-
-.contact-form .radio-group label {
-    font-weight: normal;
-    white-space: nowrap;  /* prevent text from wrapping */
-    cursor: pointer;
+.contact-form {
+    align-items: flex-start;
 }
 
 /* Newsletter checkbox */
