@@ -757,7 +757,7 @@ form {
     padding: 0.85rem 1.75rem;   /* same padding as Trips page button */
     border-radius: 6px;         /* rounded corners like Trips button */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 30px;           /* added to push button down */
+    margin-top: 40px;           /* added to push button down */
 }
 
 .home-main .cta-button:hover {
