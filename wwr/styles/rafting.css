@@ -639,7 +639,7 @@ footer .socialmedia a img:hover {
 .home-main .newsletter form label {
     display: inline-block;  /* keeps them next to inputs */
     width: 100px;           /* fixed space for alignment */
-    font-weight: 900;      /* makes the text bold */
+    font-weight: bold;      /* makes the text bold */
     margin-right: 10px;     /* space between label and input */
     text-align: right;      /* aligns text to the right inside the label box */
 }
