@@ -566,13 +566,16 @@ footer .socialmedia a img:hover {
     font-weight: 500;
 }
 
-.highlight-section {
-    background-color: #000; /* black background */
-    color: #fff;             /* white text */
-    text-align: center;      /* center the text */
-    padding: 1.5rem 1rem;   /* spacing above and below */
-    font-size: 1.5rem;      /* adjust size as needed */
-    font-weight: 700;       /* bold text */
+.highlight-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    color: #ffffff;                       /* white text */
+    text-align: center;                    /* center the text */
+    display: inline-block;                 /* box wraps tightly around text */
+    padding: 0.5rem 1rem;                 /* small padding top/bottom & sides */
+    border-radius: 4px;                    /* optional: slightly rounded edges */
+    margin: 1rem auto;                     /* spacing above/below */
+    font-size: 1.5rem;                     /* adjust text size */
+    font-weight: 700;                      /* bold text */
 }
 
 /* ================================
