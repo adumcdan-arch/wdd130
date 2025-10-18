@@ -823,10 +823,11 @@ form {
 /* Hero Section */
 .trips-hero {
     position: relative;
-    width: 100vw;       /* full viewport width */
-    height: 450px;      /* or desired height */
-    margin: 0;          /* remove any margin */
-    padding: 0;         /* remove any padding */
+    width: 100%;        /* use 100% of parent/container width */
+    max-width: 100%;    /* ensure it doesn’t exceed page */
+    height: 450px;      /* desired hero height */
+    margin: 0;          /* remove default margins */
+    padding: 0;         /* remove padding */
     background-size: cover;
     background-position: center;
     display: flex;
